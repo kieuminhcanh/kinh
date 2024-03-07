@@ -1,0 +1,51 @@
+.content {
+  p {
+    margin: 1em 0;
+    line-height: 1.7em;
+  }
+  h2 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    text-align: center;
+  }
+  h3 {
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    text-align: center;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  blockquote {
+    background-color: #080c13;
+    padding: 0.5em;
+    margin: 1em 0;
+    font-style: italic;
+
+    p {
+      margin: 1em;
+    }
+  }
+  pre {
+    background-color: #080c13;
+    margin: 1em 0;
+    padding: 1em;
+    font-style: italic;
+    white-space: pre-wrap; /* Since CSS 2.1 */
+    word-wrap: break-word;
+  }
+
+  ul,
+  ol {
+    background-color: #080c13;
+    margin: 1em 0;
+    padding: 0.5em;
+    list-style-position: inside;
+    font-style: italic;
+
+    li {
+      margin: 0.7em;
+    }
+  }
+}
