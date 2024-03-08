@@ -43,12 +43,8 @@ const { toc, page } = useContent()
 console.log(toc.value)
 const show = ref(false)
 const tableOfContents = toc.value.links.filter((item: any) => item.depth === 2)
-useSeoMeta({
+definePageMeta({
   title: page.title,
-  ogTitle: page.title,
-  description: 'Nam mô bổn sư Thích Ca Mâu Ni Phật.',
-  ogDescription: 'Nam mô bổn sư Thích Ca Mâu Ni Phật.',
   ogImage: page.image,
-  twitterCard: 'summary_large_image',
 })
 </script>
