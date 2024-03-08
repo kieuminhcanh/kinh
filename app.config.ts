@@ -3,4 +3,5 @@ export default defineAppConfig({
   gridColumns: 2,
   metaTitle: 'Phật Pháp',
   colorReading: '#f5ebcd',
-});
+  tocs: [],
+})

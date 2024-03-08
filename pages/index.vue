@@ -1,4 +1,14 @@
 <template>
+  <VAppBar theme="dark" color="#545c64">
+    <template #prepend>
+      <VAppBarTitle class="text-h6"></VAppBarTitle>
+    </template>
+    <template #append>
+      <VBtn icon="mdi-table-column" @click="settings.gridColumns = 1"></VBtn>
+      <VBtn icon="mdi-grid-large" @click="settings.gridColumns = 2"></VBtn>
+      <VBtn icon="mdi-grid" @click="settings.gridColumns = 3"></VBtn>
+    </template>
+  </VAppBar>
   <VRow>
     <VCol :cols="12 / settings.gridColumns" v-for="article in data">
       <VCard height="100%" :to="article._path">
@@ -19,7 +29,5 @@ const { data } = await useAsyncData('kinh', () => queryContent('kinh').only(['ti
 const settings = useAppConfig()
 const { app } = useRuntimeConfig()
 
-console.log(data.value)
-console.log(app)
-const config = useRuntimeConfig()
+const colors = ['#f5e4e4', '#f5ebcd', '#e2eee2', '#e1e8e8', '#eae4d3', '#e5e3df', '#ffffff']
 </script>
