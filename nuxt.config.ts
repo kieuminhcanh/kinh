@@ -1,11 +1,35 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  app: {
-    baseURL: '/', // baseURL: '/<repository>/'
-    buildAssetsDir: 'assets', // don't use "_" at the begining of the folder name to avoids nojkill conflict
-  },
+  app: { baseURL: process.env.NODE_ENV === 'production' ? '/kinh/' : '/' },
+  ssr: false,
   modules: ['@nuxt/content', 'vuetify-nuxt-module'],
+  // nitro: {
+  //   prerender: {
+  //     ignore: ['/kinh/'],
+  //   },
+  // },
+  content: {
+    documentDriven: true,
+    // https://content.nuxtjs.org/api/configuration
+    experimental: {
+      clientDB: true,
+    },
+  },
+  hooks: {
+    async 'nitro:config'(nitroConfig) {
+      if (nitroConfig.dev) {
+        return
+      }
+      nitroConfig.prerender.routes.push('/kinh/kinh-dia-tang')
+      nitroConfig.prerender.routes.push('/kinh/kinh-dieu-phap-lien-hoa')
+      nitroConfig.prerender.routes.push('/kinh/kinh-duoc-su')
+      nitroConfig.prerender.routes.push('/kinh/kinh-pho-hien')
+      nitroConfig.prerender.routes.push('/kinh/nghi-thuc-cong-phu-khuya')
+      nitroConfig.prerender.routes.push('/kinh/khai-kinh')
+      return
+    },
+  },
   vuetify: {
     vuetifyOptions: {
       theme: {
