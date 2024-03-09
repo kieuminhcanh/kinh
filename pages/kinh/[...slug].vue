@@ -25,7 +25,7 @@
       <VBtn icon="mdi-format-list-bulleted" @click="show = !show"></VBtn>
     </template>
   </VAppBar>
-  {{ settings }}
+  
   <article class="content" :style="`font-size: ${settings.fontSize + 2}px`">
     <h1 class="text-center text-h3 font-weight-bold my-16">{{ page.title }}</h1>
     <VImg :src="app.baseURL.replace(/.$/, '') + page.image" :alt="page.title" cover class="ma-16" />
