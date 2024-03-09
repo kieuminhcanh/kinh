@@ -14,7 +14,8 @@
   <VAppBar theme="dark" color="#545c64">
     <template #prepend>
       <VAppBarNavIcon @click="$router.push('/')" icon="mdi-chevron-left"></VAppBarNavIcon>
-      <VAppBarTitle class="text-h6"> {{ page.title }}</VAppBarTitle>
+      <!-- <VAppBarTitle class="text-h6"> {{ page.title }}</VAppBarTitle> -->
+      <VBtn variant="text" class="text-h6" @click="show = !show"> {{ page.title }}</VBtn>
     </template>
     <template #append>
       <VBtn icon="mdi-format-font-size-decrease" @click="settings.fontSize--"></VBtn>
