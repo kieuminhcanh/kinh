@@ -8,7 +8,9 @@
 
     <v-divider></v-divider>
 
-    <v-list-item v-for="link of tableOfContents" :key="link.id" link :href="`#${link.id}`" :title="link.text"></v-list-item>
+    <v-list-item lines="two" v-for="link of tableOfContents" :key="link.id" link :href="`#${link.id}`">
+      <VListItemTitle :style="`font-size: ${settings.fontSize}px`">{{ link.text }}</VListItemTitle>
+    </v-list-item>
   </v-navigation-drawer>
 
   <VAppBar theme="dark" color="#545c64">
@@ -23,8 +25,8 @@
       <VBtn icon="mdi-format-list-bulleted" @click="show = !show"></VBtn>
     </template>
   </VAppBar>
-
-  <article class="content" :style="`font-size: ${settings.fontSize + 1}px`">
+  {{ settings }}
+  <article class="content" :style="`font-size: ${settings.fontSize + 2}px`">
     <h1 class="text-center text-h3 font-weight-bold my-16">{{ page.title }}</h1>
     <VImg :src="app.baseURL.replace(/.$/, '') + page.image" :alt="page.title" cover class="ma-16" />
     <ul v-if="tableOfContents.length > 0">
@@ -37,11 +39,23 @@
 </template>
 
 <script lang="ts" setup>
-const settings = useAppConfig()
 const { app } = useRuntimeConfig()
 const colors = ['#f5e4e4', '#f5ebcd', '#e2eee2', '#e1e8e8', '#eae4d3', '#e5e3df', '#ffffff']
 const { toc, page } = useContent()
-console.log(toc.value)
 const show = ref(false)
 const tableOfContents = toc.value.links.filter((item: any) => item.depth === 2)
+
+const data = localStorage.getItem('settings')
+
+const settings = ref(
+  data
+    ? JSON.parse(data)
+    : {
+        fontSize: 16,
+      }
+)
+
+watch(settings.value, (value) => {
+  localStorage.setItem('settings', JSON.stringify(value))
+})
 </script>

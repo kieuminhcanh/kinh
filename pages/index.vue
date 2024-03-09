@@ -27,6 +27,7 @@
 const { data } = await useAsyncData('kinh', () => queryContent('kinh').only(['title', 'image', '_path']).sort({ title: 1 }).find())
 
 const settings = useAppConfig()
+
 const { app } = useRuntimeConfig()
 
 const colors = ['#f5e4e4', '#f5ebcd', '#e2eee2', '#e1e8e8', '#eae4d3', '#e5e3df', '#ffffff']
