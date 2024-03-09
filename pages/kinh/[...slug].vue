@@ -43,5 +43,4 @@ const { toc, page } = useContent()
 console.log(toc.value)
 const show = ref(false)
 const tableOfContents = toc.value.links.filter((item: any) => item.depth === 2)
-
 </script>
