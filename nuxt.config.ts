@@ -5,9 +5,16 @@ export default defineNuxtConfig({
     baseURL: process.env.NODE_ENV === 'production' ? '/kinh/' : '/',
     head: {
       title: 'Kinh Phật',
+      link: [
+        {
+          rel: 'icon',
+          type: 'image/x-icon',
+          href: 'https://kieuminhcanh.github.io/kinh/favicon.ico',
+        },
+      ],
       meta: [
         { hid: 'og:title', name: 'og:title', content: 'Kinh Phật' },
-        { hid: 'og:description', name: 'og:description', content: 'Nam mô Bổn Sư Thích Ca Mâu Ni Phật.' },        
+        { hid: 'og:description', name: 'og:description', content: 'Nam mô Bổn Sư Thích Ca Mâu Ni Phật.' },
         { hid: 'og:image', name: 'og:image', content: 'https://kieuminhcanh.github.io/kinh/images/kinh-dieu-phap-lien-hoa.jpg' },
       ],
     },
