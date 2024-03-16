@@ -8,7 +8,7 @@
 
     <v-divider></v-divider>
 
-    <v-list-item lines="two" v-for="link of tableOfContents" :key="link.id" link :href="`#${link.id}`">
+    <v-list-item lines="two" v-for="link of tableOfContents" :key="link.id" :to="`#${link.id}`">
       <VListItemTitle :style="`font-size: ${settings.fontSize}px`">{{ link.text }}</VListItemTitle>
     </v-list-item>
   </v-navigation-drawer>
