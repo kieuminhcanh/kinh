@@ -1,13 +1,12 @@
 <template>
-  <VLayout>
+  <NuxtPwaManifest />
+  <VApp>
     <VMain>
       <VContainer>
         <NuxtPage />
       </VContainer>
     </VMain>
-  </VLayout>
+  </VApp>
 </template>
 
-<script lang="ts" setup>
-
-</script>
+<script lang="ts" setup></script>

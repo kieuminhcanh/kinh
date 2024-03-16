@@ -1,11 +1,13 @@
+import fs from 'fs'
+const baseURL = '/kinh'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
-    baseURL: process.env.NODE_ENV === 'production' ? '/kinh/' : '/',
+    baseURL: process.env.NODE_ENV === 'production' ? `${baseURL}/` : '/',
     head: {
       title: 'Kinh Phật',
-      link: [{ rel: 'icon', type: 'image/x-icon', href: 'https://kieuminhcanh.github.io/kinh/favicon.ico' }],
+      link: [{ rel: 'icon', type: 'image/png', href: `${baseURL}/logo.png` }],
       meta: [
         { hid: 'og:title', name: 'og:title', content: 'Kinh Phật' },
         { hid: 'og:description', name: 'og:description', content: 'Nam mô Bổn Sư Thích Ca Mâu Ni Phật.' },
@@ -27,12 +29,10 @@ export default defineNuxtConfig({
       if (nitroConfig.dev) {
         return
       }
-      nitroConfig?.prerender?.routes?.push('/kinh/kinh-dia-tang')
-      nitroConfig?.prerender?.routes?.push('/kinh/kinh-dieu-phap-lien-hoa')
-      nitroConfig?.prerender?.routes?.push('/kinh/kinh-duoc-su')
-      nitroConfig?.prerender?.routes?.push('/kinh/kinh-pho-hien')
-      nitroConfig?.prerender?.routes?.push('/kinh/nghi-thuc-cong-phu-khuya')
-      nitroConfig?.prerender?.routes?.push('/kinh/khai-kinh')
+      const files = await fs.readdirSync('content').map((file) => file.replaceAll('.md', ''))
+      files.map((file) => {
+        nitroConfig?.prerender?.routes?.push(`${baseURL}/${file}`)
+      })
     },
   },
   vuetify: {
@@ -49,6 +49,11 @@ export default defineNuxtConfig({
         },
       },
     },
+  },
+  router: {
+    options: {
+      scrollBehaviorType: 'smooth'
+    }
   },
   css: ['~/assets/css/main.scss'],
 })
