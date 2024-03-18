@@ -1,5 +1,4 @@
 <template>
-  <NuxtPwaManifest />
   <VApp>
     <VMain>
       <VContainer>
@@ -9,4 +8,16 @@
   </VApp>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const { $pwa } = useNuxtApp()
+
+onMounted(() => {
+  if (!$pwa?.isPWAInstalled) {
+    console.log('PWA not installed')
+
+    $pwa?.install().then(() => {
+      console.log('PWA installed')
+    })
+  }
+})
+</script>

@@ -16,8 +16,6 @@ export default defineNuxtConfig({
         { hid: 'og:image', name: 'og:image', content: 'https://kieuminhcanh.github.io/kinh/images/kinh-dieu-phap-lien-hoa.jpg' },
       ],
     },
-    pageTransition: { name: 'page', mode: 'out-in' },
-    layoutTransition: { name: 'layout', mode: 'out-in' },
   },
   ssr: false,
   modules: ['@nuxt/content', 'vuetify-nuxt-module', '@vite-pwa/nuxt'],
@@ -62,14 +60,15 @@ export default defineNuxtConfig({
   pwa: {
     // strategies: isProduction ? 'injectManifest' : 'generateSW',
     // srcDir: isProduction ? 'service-worker' : undefined,
-    // filename: isProduction ? 'sw.ts' : undefined,
+    // filename: isProduction ? 'sw.js' : undefined,
     registerType: 'autoUpdate',
     manifest: {
+      id: '/kinh/',
       name: 'Kinh',
       short_name: 'Kinh',
       theme_color: '#ffffff',
-      scope: '/kinh/',
-      start_url: '/kinh/',
+      scope: `${baseURL}/`,
+      start_url: `${baseURL}/`,
       icons: [
         {
           src: 'logo-192.png',
@@ -88,14 +87,20 @@ export default defineNuxtConfig({
     },
     workbox: {
       globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
+      runtimeCaching: [
+        {
+          urlPattern: new RegExp(`^http:\/\/kieuminhcanh\.test\/kinh\/.*`, 'i'),
+          handler: 'NetworkFirst',
+        },
+      ],
     },
     injectManifest: {
       globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
     },
     devOptions: {
-      enabled: true,
+      enabled: false,
       suppressWarnings: true,
-      navigateFallback: '/',
+      navigateFallback: '/kinh/',
       navigateFallbackAllowlist: [/^\/$/],
       type: 'module',
     },

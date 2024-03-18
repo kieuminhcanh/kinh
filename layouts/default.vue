@@ -36,17 +36,6 @@
 
     <slot />
   </article>
-
-  <!-- <article class="content" :style="`font-size: ${settings.fontSize + 2}px`">
-    <h1 class="text-center text-h3 font-weight-bold my-16">{{ page.title }}</h1>
-    <VImg :src="app.baseURL.replace(/.$/, '') + page.image" :alt="page.title" cover class="ma-16" />
-    <ul v-if="tableOfContents.length > 0">
-      <li :key="link.id" v-for="link of tableOfContents">
-        <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
-      </li>
-    </ul>
-    <ContentRenderer :value="page" />
-  </article> -->
 </template>
 
 <script lang="ts" setup>
