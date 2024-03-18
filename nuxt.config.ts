@@ -16,6 +16,7 @@ export default defineNuxtConfig({
         { hid: 'og:image', name: 'og:image', content: 'https://kieuminhcanh.github.io/kinh/images/kinh-dieu-phap-lien-hoa.jpg' },
       ],
     },
+    pageTransition: { name: 'fade-transition' },
   },
   ssr: false,
   modules: ['@nuxt/content', 'vuetify-nuxt-module', '@vite-pwa/nuxt'],
