@@ -1,7 +1,7 @@
 <template>
   <VAppBar theme="dark" color="#545c64">
-    <template #prepend>
-      <VAppBarTitle class="text-h6"></VAppBarTitle>
+    <template #prepend v-if="useNuxtApp().$pwa?.showInstallPrompt && !useNuxtApp().$pwa?.needRefresh && $vuetify.display.mobile">
+      <VBtn @click="useNuxtApp().$pwa?.install()">Install Kinh</VBtn>
     </template>
     <template #append>
       <VBtn icon="mdi-table-column" @click="settings.gridColumns = 1"></VBtn>
