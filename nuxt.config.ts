@@ -68,6 +68,7 @@ export default defineNuxtConfig({
       name: 'Kinh',
       short_name: 'Kinh',
       theme_color: '#ffffff',
+      display: 'standalone',
       scope: `${baseURL}/`,
       start_url: `${baseURL}/`,
       icons: [

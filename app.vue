@@ -2,6 +2,7 @@
   <VApp>
     <VMain>
       <VContainer>
+        <VitePwaManifest />
         <NuxtPage />
       </VContainer>
     </VMain>
@@ -16,7 +17,9 @@ nuxtApp.hook('page:finish', () => {
 })
 
 onMounted(() => {
-  const $pwa = nuxtApp.$pwa
+  const { $pwa } = nuxtApp
+  if ($pwa?.offlineReady) console.log('App ready to work offline')
+
   if (!$pwa?.isPWAInstalled) {
     console.log('PWA not installed')
 
