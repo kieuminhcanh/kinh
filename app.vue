@@ -9,9 +9,14 @@
 </template>
 
 <script lang="ts" setup>
-const { $pwa } = useNuxtApp()
+const nuxtApp = useNuxtApp()
+
+nuxtApp.hook('page:finish', () => {
+  window.scrollTo(0, 0)
+})
 
 onMounted(() => {
+  const $pwa = nuxtApp.$pwa
   if (!$pwa?.isPWAInstalled) {
     console.log('PWA not installed')
 
