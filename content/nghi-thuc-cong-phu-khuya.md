@@ -13,7 +13,7 @@ image: '/images/nghi-thuc-cong-phu-khuya.jpg'
 
 (Chủ lễ thắp ba cây hương quỳ ngay thẳng cầm hương ngang trán niệm bài cúng hương).
 
-### TÁN PHẬT
+## TÁN PHẬT
 
 ```
 Nguyện đem lòng thành kính
@@ -43,7 +43,7 @@ Chí tâm đảnh lễ : Nam mô Ta-Bà Giáo Chủ Ðiều-ngự Bổn-sư Thí
 
 Chí tâm đảnh lễ : Nam mô Tây Phương Cực-Lạc thế-giới đại-từ đại bi A Di Ðà Phật, Ðại Bi Quán-Thế-Âm Bồ-tát, Ðại-Thế-Chí Bồ-Tát, Ðại Nguyện Ðịa Tạng Vương Bồ tát, Thanh-Tịnh Ðại Hải Chúng Bồ-Tát.
 
-### TÁN LƯ HƯƠNG
+## TÁN LƯ HƯƠNG
 
 ```
 Hương thơm vừa đốt lên
@@ -83,7 +83,7 @@ Nam-mô Kim-Cang-Tạng Bồ Tát.
 
 Nhĩ thời Thế-Tôn, tùng nhục kế trung, dõng bá bảo-quang, quang trung dõng xuất, thiên diệp bảo liên, hữu hóa Như-Lai, tọa bảo hoa trung, đảnh phóng thập đạo, bá bảo quang-minh, nhứt nhứt quang minh, giai biến thị hiện thập Hằng hà sa, Kim-Cang Mật Tích, kình sơn trì sử, biến hư không giới, đại chúng ngưỡng quan, uý ái kiêm bảo, cầu Phật ai hựu, nhứt tâm thính Phật, vô-kiến đảnh tướng, phóng quang Như Lai, tuyên thuyết thần Chú.
 
-### ĐỆ NHỨT
+## ĐỆ NHỨT
 
 Nam mô tát đát tha tô già đa da a ra ha đế tam miệu tam bồ đà tỏa. Tát đát tha Phật đà cu tri sắc ni san.
 
@@ -147,19 +147,19 @@ Nam mô bà già bà đế, lặc đác na kê đô ra xà da, đa tha già đa 
 
 Nam mô a bà ra thị đam, bác ra đế dương kỳ ra, tát ra bà bộ đa yết ra ha, ni yết ra ha yết ca ra ha ni, bạc ra bí địa da sất đà nể, a ca ra mật rị trụ, bát rị đát ra da nảnh yết rị, tát ra bà bàn đà na mục xoa ni, tát ra bà đột sắc tra đột tất phạp bát na nể phạt ra ni, giả đô ra thất đế nẫm, yết ra ha ta ha tát ra nhã xà, tỳ đa băng ta na yết rị, a sắc tra băng xá đế nẫm, na xoa sát đác ra nhã xà, ba ra tát đà na yết rị, a sắc tra nẫm, ma ha yết ra ha nhã xà, tỳ đa băng tát na yết rị, tát bà xá đô lô nể bà ra nhã xà, hô lam đột tất phạp nan giá na xá ni, bí sa xá tất đác ra, a kiết ni ô đà ca ra nhã xà, a bát ra thị đa cu ra ma ha bác ra chiến trì, ma ha điệp đa, ma ha đế xà, ma ha thuế đa xà bà ra, ma ha bạt ra bàn đà ra bà tất nể, a rị da đa ra, tỳ rị cu tri, thệ bà tỳ xà da, bạc xà ra ma lễ để, tỳ xá lô đa, bột đằng dõng ca, bạt xà ra chế hắt na a giá, ma ra chế bà bác ra chất đa, bạc xà ra thiện trì, tỳ xá ra giá, phiến đa xá bệ đề bà bổ thị đa,tô ma lô ba, ma ha thuế đa, a rị da đa ra, ma ha bà ra, a bác ra, bạt xà ra thương yết ra chế bà, bạt xà ra cu ma rị, cu lam đà rị, bạt xà ra hắc tát đa giá tỳ địa gia kiền giá na ma rị ca, khuất tô mẫu bà yết ra đá na, bệ lô giá na cu rị da, dạ ra thố sắt ni sam, tỳ chiết lam bà ma ni giá, bạt xà ra ca na ca ba ra bà, lô xà na bạt xà ra đốn trỉ giá, thuế đa giá ca ma ra sát xa thi ba ra bà, ế đế di đế, mẫu đà ra yết noa, ta bệ ra sám, quật phạm đô, ấn thố na mạ mạ tỏa.
 
-### ĐỆ NHỊ
+## ĐỆ NHỊ
 
 Ô hồng, rị sắt yết noa, bác lặc xá tất đa, tát đát tha già đô sắc ni sam. Hổ hồng, đô lô ung chiêm bà na, Hổ hồng, đô lô ung tất đam bà na. Hổ hồng, đô lô ung ba ra sắc địa da tam bát xá noa yết ra. Hổ Hồng, đô lô ung, tát bà dược xoa hắt ra sát ta, yết ra ha nhã xà, tỳ đằng băng tát na yết ra. Hổ hồng, đô lô ung, giả đô ra thi để nẫm, yết ra ha, ta ha thi để nẫm, yết ra ha, ta ha tát ra nẫm, tỳ đằng băng tát na ra. Hổ hồng, đô lô ung, ra xoa, bà già phạm tát đát tha già đô sắc ni sam, ba ra điểm xà kiết rị, ma ha ta ha tát ra, bột thọ ta ha tát ra thất rị sa, cu tri ta ha tát nê đế lệ, a tệ đề thị bà rị đa, tra tra anh ca ma ha bạt xà lô đà ra, đế rị bồ bà na, man trà ra, ô hồng, ta tất đế bạc bà đô, mạ mạ ấn thố na mạ mạ tỏa.
 
-### ĐỆ TAM
+## ĐỆ TAM
 
 Ra xà bà dạ, chủ ra bạt dạ, a kỳ ni bà dạ, ô đà ca bà dạ, tỳ xa bà dạ, xá tát đa ra bà dạ, bà ra chước yết ra bà dạ, đột sắc xoa bà dạ, a xá nể bà dạ, a ca ra mật rị trụ bà dạ, đà ra ni bộ di kiếm ba già bà đà bà dạ, ô ra ca bà đa bà dạ, lặc xà đàng trà bà dạ, na già bà dạ, tỳ điều đát bà dạ, tô ba ra noa bà dạ, dược xoa yết ra ha, ra xoa tư yết ra ha, tất rị đa yết ra ha, tỳ xá giá yết ra ha, bộ đa yết ra ha, cưu bàn trà yết ra ha, bổ đơn na yết ra ha, ca tra bổ đơn na yết ra ha, tất kiền độ yết ra ha, a bá tát ma ra yết ra ha, ô đàn ma đà yết ra ha, xa dạ yết ra ha, hê rị bà đế yết ra ha, xã đa ha rị nẫm, yết bà ha rị nẩm, lô địa ra ha rị nẩm, mang ta ha rị nẩm, mê đà ha rị nẩm, ma xà ha rị nẩm, xà đa ha rị nữ, thị tỷ đa ha rị nẩm, tỳ đa ha rị nẩm bà đa ha rị nẩm, a du giá ha rị nữ, chất đa ha rị nữ, đế sam tát bệ sam, tát bà yết ra ha nẩm, tỳ đà dạ xà sân đà dạ di, kê ra dạ di, ba rị bạt ra giả ca hất rị đởm, tỳ đà dạ xà sân đà dạ di, kê ra dạ di, trà diễn ni hất rị đởm, tỳ đà dạ xà sân đà dạ di, kê ra dạ di, ma ha bát du bác đát dạ, lô đà ra hất rị đởm, tỳ đà dạ xà sân đà dạ di, kê ra dạ di, na ra dạ noa hất rị đởm, tỳ đà dạ xà sân đà dạ di, kê ra dạ di, đát đỏa già lô trà tây hất rị đởm, tỳ đà dạ xà sân đà dạ di, kê ra dạ di, ma ha ca ra ma đát rị già noa hất rị đởm, tỳ đà dà xà sân đà dạ di, kê ra dạ di, ca ba rị ca hất rị đởm, Tỳ đà dạ xà sân đà da di, kê ra dạ di, xà dạ yết ra, ma độ yết ra tát bà ra tha ta đạt na hất rị đởm, tỳ đà dạ xà sân đà dạ di, kê ra dạ di, giả đốt ra bà kỳ nể hất rị đởm, tỳ đà dạ xà sân đà dạ di, kê ra dạ di, tỳ rị dương hất rị tri, nan đà kê sa ra dà noa bác đế, sách hê dạ hất rị đởm, tỳ đà dạ xà sân đà dạ di, kê ra dạ di, na yết na xá ra bà noa hất rị đởm, tỳ đà dạ xà sân đà dạ di, kê ra dạ di, na yết na xá ra bà noa hất rị đởm, tỳ đà dạ xà sân đà dạ di, kê ra dạ di, a-la-hán hất rị đởm, tỳ đà dạ xà sân đà dạ di, kê ra dạ di, tỳ đa ra già hất rị đởm, tỳ đà dạ xà sân đà dạ di, kê ra dạ di, bạt xả ra ba nể, cu hê dạ, cu hê dạ xa địa bát đế hất rị đởm, tỳ đà dạ xà sân đà dạ di, kê ra dạ di, ra thoa vỏng, bà dà phạm, ấn thố na mạ mạ tỏa.
 
-### ĐỆ TỨ
+## ĐỆ TỨ
 
 Bà già phạm, tát đát đa bác đá ra, Nam mô tý lô đô đế, a tất đa na ra lặc ca, ba ra bà tất phổ tra, tỳ ca tát đát đa bát đế rị, thập Phật ra thập Phật ra, đà ra đà ra, tần đà ra, tần đà ra, sân đà sân đà. Hổ hồng. Hổ hồng, phấn tra, phấn tra, phấn tra, phấn tra, phấn tra, ta ha, hê hê phấn, a mâu ca da phấn, a ba ra đề ha đa phấn, ba ra bà ra đà phấn, a tố ra tỳ đà ra ba ca phấn, tát bà đề bệ tệ phấn, tát bà na già tệ phấn, tát bà dược xoa tệ phấn, tát bà kiền thát bà tệ phấn, tát bà bổ đơn na tệ phấn, ca tra bổ đơn na tệ phấn, tát bà đột lang chỉ đế tệ phấn, tát bà đột sáp tỷ lê hất sắc đế tệ phấn, tát bà thập bà lê tệ phấn, tát bà a bá tất ma lê tệ phấn, tát bà xá ra bà noa tệ phấn, tát bà địa đế kê tệ phấn, tát bà đát ma đà kê tệ phấn, tát bà tỳ đà da ra thệ giá lê tệ phấn, xà dạ yết ra ma độ yết ra, tát bà ra tha ta đà kê tệ phấn; tỳ địa dạ giá lê tệ phấn, giả đô ra phược kỳ nể tệ phấn, bạt xà ra cu ma rị, tỳ đà dạ ra thệ tệ phấn, ma ha ba ra đinh dương xoa tỳ rị tệ phấn, bạt xà ra thương yết ra dạ, ba ra trượng kỳ ra xà da phấn, ma ha ca ra dạ, ma ha mạt đát rị ca noa. Nam mô ta yết rị đa dạ phấn, tỷ sắc noa tỳ duệ phấn, bột ra ha mâu ni duệ phấn, a kỳ ni duệ phấn, ma ha yết rị duệ phấn, yết ra đàn trì duệ phấn, miệc đát trị duệ phấn, lao đát rị duệ phấn, giá văn trà duệ phấn, yết la ra đát rị duệ phấn, ca bác rị duệ phấn, a địa mục chất đa ca thi ma xá na, bà tư nể duệ phấn, diễn kiết chất, tát đỏa bà tỏa, mạ mạ ấn thố na mạ mạ tỏa.
 
-### ĐỆ NGŨ
+## ĐỆ NGŨ
 
 Đột sắc tra chất đa, a mạt đát rị chất đa, ô xà ha ra, già bà ha ra, lô địa ra ha ra, ta bà ha ra, ma xà ha ra, xà đa ha ra, thị tỷ đa ha ra, bạc lược dạ ha ra, kiền đà ha ra, bố sử ba ha ra, phả ra ha ra, bà tỏa ha ra, bác ba chất đa, đột sắc tra chất đa, lao đà ra chất đa, dược xoa yết ra ha, ra sát ta yết ra ha, bế lệ da yết ra ha, tỳ xá giá yết ra ha, bộ đa yết ra ha, cưu bàn trà yết ra ha, tất kiền đà yết ra ha, ô đát ma đà yết ra ha, xa dạ yết ra ha, a bá tất ma ra yết ra ha, trạch khê cách trà kỳ ni yết ra ha, rị Phật đế yết ra ha, xà di ca yết ra ha, xá cu ni yết ra ha, lao đà ra nan địa ca yết ra ha, a lam bà yết ra ha, kiền độ ba ni yết ra ha, thập Phật ra yên ca hê ca, trụy đế dược ca, đát lệ đế dược ca, giả đột thác ca, ni đề thập phạt ra, tỷ sam ma thập phạt ra, bạc để ca, tỷ để ca, thất lệ sắt mật ca, ta nể bác đế ca, tát bà thập phạt ra, thất lô kiết đế, mạt đà bệ đạt lô chế kiếm, a tỷ lô kiềm, mục khê lô kiềm, yết rị đột lô kiềm, yết ra ha yết lam, yết na du lam, đản đa du lam, hất rị dạ du lam, mạt mạ du lam, bạt rị thất bà du lam, tỷ lật sắc tra du lam, ô đà ra du lam, yết tri du lam, bạt tất đế du lam, ô lô du lam, thường già du lam, hắc tất đa du lam, bạt đà du lam, ta phòng án già bác ra trượng già du lam, bộ đa tỷ đa trà, trà kỳ ni thập bà ra, đà đột lô ca kiến đốt lô kiến tri, bà lộ đa tỳ, tát bác lô, ha lăng già, du sa đát ra, ta na yết ra, tỳ sa dụ ca, a kỳ ni ô đà ca, mạt ra bệ ra, kiến đa ra, a ca ra mật rị đốt đát liểm bộ ca, địa lật lặc tra, tỷ rị sắc chất ca, tát bà na cu ra, tứ dẫn già tệ yết ra, rị dược xoa, đác ra sô, mạt ra thị phệ đế sam, ta bệ sam, tất đát đa bác đát ra, ma ha bạc xà lô sắc ni sam, ma ha bác lặc trượng kỳ lam, dạ ba đột đà xá dụ xà na, biện đát lệ noa, tỳ đà da bàn đàm ca lô di, đế thù bàn đàm ca lô di, bát ra tỳ đà, bàn đàm ca lô di, đác điệc tha.
 
@@ -259,7 +259,7 @@ Nên biết Bát Nhã Ba La Mật Ða là Chú đại thần, là Chú đại mi
 
 Cho nên nói Chú Bát Nhã Ba La Mật Ða, bèn nói Chú rằng : Yết đế, yết đế, ba la yết đế, ba la tăng yết đế, bồ đề tát bà ha.(3 lần)
 
-### TÁN PHẬT
+## TÁN PHẬT
 
 ```
 Thượng lai hiện tiền thanh tịnh chúng,
@@ -331,7 +331,7 @@ Bát nạn tam đồ
 Cộng nhập tỳ lô tánh hải.
 ```
 
-### HỒI HƯỚNG
+## HỒI HƯỚNG
 
 ```
 Tụng Chú công đức hạnh thù thắng
@@ -352,7 +352,7 @@ Hướng về khắp tất cả
 Ðều trọn thành Phật đạo.
 ```
 
-### Tam quy y
+## Tam quy y
 
 Tự quy y Phật, xin nguyện chúng sinh, thể theo đạo cả, phát lòng vô thượng. (1 lạy)
 
