@@ -9,7 +9,9 @@ kinh: true
 
 _Hòa thượng Thích Trí Tịnh_
 
-## Mục lục1. [Phẩm 1: Thần thông trên cung trời Đao Lợi](./01-pham-1-than-thong-tren-cung-troi-dao-loi)
+## Mục lục
+
+1. [Phẩm 1: Thần thông trên cung trời Đao Lợi](./01-pham-1-than-thong-tren-cung-troi-dao-loi)
 
 2. [Phẩm 2: Phân thân tập hội](./02-pham-2-phan-than-tap-hoi)
 3. [Phẩm 3: Quán chúng sanh nghiệp duyên](./03-pham-3-quan-chung-sanh-nghiep-duyen)
