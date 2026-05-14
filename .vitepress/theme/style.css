@@ -27,13 +27,17 @@ html {
   padding-bottom: 5rem;
 }
 
-/* VitePress default theme pins `.vp-doc p` / `li` to fixed px line-heights
-   (28px / 32px). Override with our reader var so font-size changes scale
-   line-height too — critical for Vietnamese diacritics at large sizes. */
+/* VitePress default theme pins `.vp-doc p` / `li` line-heights to fixed px
+   (28px / 32px) AND `.vp-doc blockquote p` font-size to 16px. Override both
+   with reader vars so font-size changes scale every content node uniformly —
+   critical for Vietnamese diacritics at large sizes and for elderly readers
+   who expect blockquoted verses (kệ) to match body text. */
 .vp-doc p,
 .vp-doc li,
 .vp-doc blockquote,
-.vp-doc blockquote > p {
+.vp-doc blockquote > p,
+.vp-doc blockquote p {
+  font-size: var(--reader-font-size);
   line-height: var(--reader-line-height);
 }
 
@@ -70,6 +74,18 @@ html {
 }
 .VPContent.has-sidebar {
   padding-left: 0 !important;
+}
+
+/* Single-file kinh (chapters:false, e.g. Kinh Dược Sư, Phổ Hiền, Khai Kinh,
+   Công Phu Khuya) have no sidebar config → VitePress hard-caps content at
+   .VPDoc:not(.has-sidebar) .content { max-width: 752px/784px }. Since the
+   sidebar surface is hidden anyway (see rule above), unlock the cap so reader
+   width stays consistent across all kinh. */
+.VPDoc:not(.has-sidebar) .container {
+  max-width: var(--vp-layout-max-width) !important;
+}
+.VPDoc:not(.has-sidebar) .content {
+  max-width: none !important;
 }
 
 /* Scale headings with reader font-size. VitePress pins them to fixed px
