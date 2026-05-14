@@ -56,6 +56,7 @@ New doc added under `.ai/docs/**` → update this table with read condition.
 4. Fail-fast: command fails → report + stop.
 5. NEVER call binaries directly (`vitepress`, `vitest`, `vue-tsc`, `oxlint`, `oxfmt`). Always go through `package.json` scripts.
 6. Never edit `content/**/*.md` body text without explicit owner request — kinh content is sacred source material.
+7. **Windows shell** — never redirect to `/dev/null` or `nul`. Creates stray files (`dev/null/*`, `./nul`). If output suppression needed: omit redirect, or pipe to `: >/dev/null` ONLY on POSIX. For this repo (Win + sh): just don't redirect. `/dev/null/path.ext` is code-block placeholder syntax ONLY — never pass as real path to `edit_file` / `terminal` / fs API.
 
 ## 3. Knowledge lookup (MANDATORY)
 
