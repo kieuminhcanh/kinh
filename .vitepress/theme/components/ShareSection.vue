@@ -73,12 +73,12 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <section class="print:hidden mt-12 pt-6 border-t border-base-300 max-w-3xl mx-auto px-4">
+  <section class="print:hidden mt-12 pt-6 border-t border-[--vp-c-divider] max-w-3xl mx-auto px-4">
     <h2 class="text-lg font-semibold mb-3 text-center">{{ t("share.heading") }}</h2>
     <div class="flex justify-center">
       <button
         type="button"
-        class="btn btn-primary btn-lg min-h-14 min-w-44 gap-2"
+        class="inline-flex items-center justify-center gap-2 min-h-14 min-w-44 px-6 rounded-md text-base font-semibold bg-[--vp-c-brand-1] text-white hover:bg-[--vp-c-brand-2] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[--vp-c-brand-1] transition-colors"
         :aria-label="t('share.ariaShare')"
         @click="handleShare"
       >
@@ -113,8 +113,8 @@ onBeforeUnmount(() => {
         aria-live="polite"
       >
         <div
-          class="alert shadow-lg"
-          :class="toastKind === 'success' ? 'alert-success' : 'alert-error'"
+          class="px-4 py-3 rounded-lg shadow-lg text-white text-sm font-medium"
+          :class="toastKind === 'success' ? 'bg-green-600' : 'bg-red-600'"
         >
           <span>{{ toastMessage }}</span>
         </div>

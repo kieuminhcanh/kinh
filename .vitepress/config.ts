@@ -6,10 +6,10 @@ import { join } from "node:path";
 import { kinhCatalog } from "./data/kinh";
 
 /**
- * Auto-build sidebar entries for a multi-chapter kinh by scanning content/<slug>/.
+ * Auto-build sidebar entries for a multi-chapter kinh by scanning <slug>/ at repo root.
  */
 function chaptersOf(slug: string) {
-  const dir = join(process.cwd(), "content", slug);
+  const dir = join(process.cwd(), slug);
   const files = readdirSync(dir)
     .filter((f) => f.endsWith(".md") && f !== "index.md")
     .sort();
@@ -41,8 +41,9 @@ export default defineConfig({
   title: "Kinh Phật",
   description: "Nam mô Bổn Sư Thích Ca Mâu Ni Phật.",
   lang: "vi",
-  srcDir: "content",
+  appearance: true,
   cleanUrls: true,
+  srcExclude: ["**/README.md", "**/TODO.md", "**/AGENTS.md", ".ai/**"],
   lastUpdated: false,
 
   head: [
@@ -128,8 +129,47 @@ export default defineConfig({
           ],
         },
         workbox: {
-          globPatterns: ["**/*.{js,css,html,png,svg,ico,jpg,jpeg,webp}"],
+          // Precache all static assets, including web fonts + JSON locale files.
+          // Raise size cap so larger kinh HTML / hero images aren't skipped.
+          globPatterns: ["**/*.{js,css,html,png,svg,ico,jpg,jpeg,webp,woff,woff2,ttf,json}"],
+          maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
+          cleanupOutdatedCaches: true,
           navigateFallback: "/kinh/",
+          // Don't hijack non-navigation requests (assets, font CDN).
+          navigateFallbackDenylist: [/^\/api\//, /\.[a-z0-9]+$/i],
+          // Cache Google Fonts (CSS + woff2 files served from gstatic) so the
+          // Vietnamese serif/sans typefaces remain available offline.
+          runtimeCaching: [
+            {
+              urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
+              handler: "CacheFirst",
+              options: {
+                cacheName: "google-fonts-css",
+                expiration: { maxEntries: 10, maxAgeSeconds: 60 * 60 * 24 * 365 },
+                cacheableResponse: { statuses: [0, 200] },
+              },
+            },
+            {
+              urlPattern: /^https:\/\/fonts\.gstatic\.com\/.*/i,
+              handler: "CacheFirst",
+              options: {
+                cacheName: "google-fonts-webfonts",
+                expiration: { maxEntries: 30, maxAgeSeconds: 60 * 60 * 24 * 365 },
+                cacheableResponse: { statuses: [0, 200] },
+              },
+            },
+            {
+              // Locally hosted /kinh/images/* — already covered by precache,
+              // but use stale-while-revalidate as a safety net for any
+              // image not picked up by globPatterns at build time.
+              urlPattern: ({ request }) => request.destination === "image",
+              handler: "StaleWhileRevalidate",
+              options: {
+                cacheName: "images",
+                expiration: { maxEntries: 200, maxAgeSeconds: 60 * 60 * 24 * 90 },
+              },
+            },
+          ],
         },
       }),
     ],

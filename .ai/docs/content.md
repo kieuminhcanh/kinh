@@ -1,6 +1,8 @@
 # Content conventions
 
-Rules for editing / adding markdown under `content/`. Read before any change touching `content/**/*.md`.
+Rules for editing / adding markdown at repo root. Read before any change touching `<slug>/**/*.md`.
+
+VitePress default `srcDir` (repo root) is used — markdown pages live next to `package.json`, NOT in `content/`.
 
 ## Hard rules
 
@@ -12,12 +14,16 @@ Rules for editing / adding markdown under `content/`. Read before any change tou
 ## Directory structure
 
 ```
-content/
-├── index.md                          # home page (layout: home; rendered via custom Home.vue)
+<repo root>/
+├── index.md                          # home page (rendered via custom Home.vue)
+├── public/                           # static assets (default VitePress location)
+│   └── images/<slug>.jpg
 └── <slug>/
-    ├── index.md                      # kinh root: title page + manual TOC links (multi-chapter only)
+    ├── index.md                      # kinh root: title page + manual TOC (multi-chapter only)
     └── NN-<chapter-slug>.md          # individual chapters (multi-chapter kinh only)
 ```
+
+Non-content markdown at root (`README.md`, `TODO.md`, `AGENTS.md`, `.ai/**`) excluded via `srcExclude` in `config.ts`.
 
 Single-file kinh (short) → only `index.md` in the directory. Multi-chapter kinh → `index.md` is the table of contents + chapter files alongside.
 
@@ -31,7 +37,7 @@ Single-file kinh (short) → only `index.md` in the directory. Multi-chapter kin
 
 ## Frontmatter schema
 
-### Home page (`content/index.md`)
+### Home page (`index.md`)
 
 ```yaml
 ---
@@ -40,7 +46,7 @@ layout: home
 ---
 ```
 
-### Kinh root (`content/<slug>/index.md`)
+### Kinh root (`<slug>/index.md`)
 
 ```yaml
 ---
@@ -54,7 +60,7 @@ kinh: true
 
 Required: `title`, `image`. Optional: `description`, `author`. `kinh: true` flag marks kinh root pages (reserved for future filtering).
 
-### Chapter file (`content/<slug>/NN-*.md`)
+### Chapter file (`<slug>/NN-*.md`)
 
 ```yaml
 ---
@@ -75,8 +81,8 @@ Spec required (`specs.md` §"When to create a spec"). Steps in order:
 
 1. Add `KinhMeta` entry to `.vitepress/data/kinh.ts` (slug, title, image, chapters flag, author?, description?).
 2. Add cover image to `public/images/<slug>.jpg` (3:4 aspect ratio, ≥ 600×800).
-3. Create `content/<slug>/` directory.
-4. Create `content/<slug>/index.md` with frontmatter per schema above.
+3. Create `<slug>/` directory at repo root.
+4. Create `<slug>/index.md` with frontmatter per schema above.
 5. Multi-chapter? Split source into `NN-<chapter-slug>.md` files (use `scripts/split-chapters.ts` pattern).
 6. Add i18n keys under `kinh.<slug>.{title,description}` in **both** `locales/vi.json` and `locales/en.json`.
 7. Verify sidebar appears: `bun run dev` → `/kinh/<slug>/` → check sidebar shows all chapters.
@@ -92,14 +98,14 @@ Source single-file kinh has `## ` headings for each section → use `scripts/spl
 4. Remove old single-file source.
 5. Flip `chapters: true` in catalog if changed.
 
-Owner approval required before running the script (touches content/).
+Owner approval required before running the script (touches kinh markdown files at repo root).
 
 ## Image conventions
 
 - Format: `.jpg` (cover art) or `.png` (logo).
 - Path in frontmatter / catalog: absolute including base, e.g. `/images/kinh-dieu-phap-lien-hoa.jpg`. The `withBase()` helper is applied at render time in `Home.vue`.
 - Store originals in `public/images/`. Never edit images in `.vitepress/dist/`.
-- Catalog `image` field uses `/kinh/images/...` (absolute with base) because it's consumed as plain string by `<img :src>` — Vite does not rewrite it.
+- Catalog `image` field uses `/images/<file>` (NO base prefix). `Home.vue` wraps it with `withBase()` so the base ‘/kinh/’ is added at render time. NEVER hardcode ‘/kinh/’ in the catalog.
 
 ## Anchors (table of contents)
 

@@ -35,7 +35,9 @@ function openKinh() {
       aria-live="polite"
       :aria-label="t('schedule.toast.title')"
     >
-      <div class="alert alert-info shadow-xl flex-col sm:flex-row gap-2">
+      <div
+        class="flex flex-col sm:flex-row items-start sm:items-center gap-3 p-4 rounded-lg shadow-xl bg-[--vp-c-brand-soft] text-[--vp-c-text-1] border border-[--vp-c-brand-1]/40"
+      >
         <div class="flex-1">
           <h3 class="font-bold">{{ t("schedule.toast.title") }}</h3>
           <p class="text-sm">
@@ -45,7 +47,7 @@ function openKinh() {
         <div class="flex gap-2 shrink-0">
           <button
             type="button"
-            class="btn btn-sm btn-primary"
+            class="inline-flex items-center justify-center min-h-11 px-3 rounded-md text-sm font-medium bg-[--vp-c-brand-1] text-white hover:bg-[--vp-c-brand-2] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[--vp-c-brand-1] transition-colors"
             :aria-label="t('schedule.toast.open')"
             @click="openKinh"
           >
@@ -53,7 +55,7 @@ function openKinh() {
           </button>
           <button
             type="button"
-            class="btn btn-sm btn-ghost"
+            class="inline-flex items-center justify-center min-h-11 px-3 rounded-md text-sm font-medium text-[--vp-c-text-1] bg-transparent hover:bg-[--vp-c-bg-soft] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[--vp-c-brand-1] transition-colors"
             :aria-label="t('schedule.toast.dismiss')"
             @click="dismissDue"
           >

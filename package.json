@@ -22,7 +22,6 @@
     "@types/bun": "latest",
     "@vue/test-utils": "^2.4.10",
     "@vueuse/core": "^11.0.0",
-    "daisyui": "^5.0.0",
     "happy-dom": "^20.9.0",
     "oxfmt": "^0.49.0",
     "oxlint": "^1.64.0",

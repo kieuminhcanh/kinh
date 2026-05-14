@@ -1,45 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Noto+Serif:wght@400;700&display=swap");
 @import "tailwindcss";
-@plugin "daisyui" {
-  themes:
-    light --default,
-    dark --prefersdark,
-    sepia;
-}
 
-@plugin "daisyui/theme" {
-  name: "sepia";
-  default: false;
-  prefersdark: false;
-  color-scheme: light;
-  --color-base-100: oklch(95% 0.04 85);
-  --color-base-200: oklch(92% 0.05 85);
-  --color-base-300: oklch(88% 0.06 85);
-  --color-base-content: oklch(25% 0.04 60);
-  --color-primary: oklch(45% 0.12 60);
-  --color-primary-content: oklch(98% 0.02 85);
-  --color-secondary: oklch(55% 0.1 50);
-  --color-secondary-content: oklch(98% 0.02 85);
-  --color-accent: oklch(60% 0.15 40);
-  --color-accent-content: oklch(98% 0.02 85);
-  --color-neutral: oklch(30% 0.04 60);
-  --color-neutral-content: oklch(95% 0.04 85);
-  --color-info: oklch(60% 0.12 230);
-  --color-info-content: oklch(98% 0.01 230);
-  --color-success: oklch(60% 0.15 140);
-  --color-success-content: oklch(98% 0.01 140);
-  --color-warning: oklch(70% 0.15 80);
-  --color-warning-content: oklch(20% 0.04 80);
-  --color-error: oklch(55% 0.2 25);
-  --color-error-content: oklch(98% 0.01 25);
-  --radius-selector: 0.5rem;
-  --radius-field: 0.5rem;
-  --radius-box: 0.75rem;
-  --size-selector: 0.25rem;
-  --size-field: 0.25rem;
-  --border: 1px;
-  --depth: 1;
-  --noise: 0;
+/* Override VitePress base.css `img { height: auto }` so object-cover works
+   inside aspect-ratio boxes (used on Home grid). */
+img.object-cover {
+  height: 100%;
 }
 
 /* Reader font + spacing — controlled by JS via CSS vars on :root */
@@ -62,6 +27,16 @@ html {
   padding-bottom: 5rem;
 }
 
+/* VitePress default theme pins `.vp-doc p` / `li` to fixed px line-heights
+   (28px / 32px). Override with our reader var so font-size changes scale
+   line-height too — critical for Vietnamese diacritics at large sizes. */
+.vp-doc p,
+.vp-doc li,
+.vp-doc blockquote,
+.vp-doc blockquote > p {
+  line-height: var(--reader-line-height);
+}
+
 /* Hide VitePress default search trigger — replaced by labeled
    "Search" button on Home. We keep the element in the DOM (offscreen)
    so we can call `.click()` on it; Cmd+K shortcut also still works. */
@@ -74,23 +49,54 @@ html {
   overflow: hidden;
 }
 
-/* A11y: enforce WCAG 2.5.5 target size ≥ 44×44 for compact buttons.
-   DaisyUI `btn-sm` defaults below 44; global override avoids per-button edits. */
-.btn-sm {
-  min-height: 2.75rem;
-  min-width: 2.75rem;
+/* Hide VitePress's native appearance (dark/light) toggle in the nav.
+   Theme is controlled via SettingsDrawer; the duplicate nav button confuses
+   elderly users. `appearance: true` in config stays on so the underlying
+   color-mode store still binds `html.dark`. */
+.VPNavBarAppearance,
+.VPNavScreenAppearance,
+.VPSwitchAppearance {
+  display: none !important;
 }
 
+/* Hide mobile hamburger menu + its overlay. Sidebar handles navigation on
+   reader pages; the hamburger duplicates that and clutters the minimal UI. */
+.VPNavBarHamburger,
+.VPNavScreen {
+  display: none !important;
+}
+
+/* Hide the three-dot "extra" dropdown on the right end of the nav bar
+   (collapsed appearance + translation menu on narrow screens). */
+.VPNavBarExtra {
+  display: none !important;
+}
+
+/* Scale headings with reader font-size. VitePress pins them to fixed px
+   (h1=28, h2=24, h3=20); override so kinh title / phẩm / chapter headings
+   grow when user bumps font-size. Multipliers chosen to keep visual hierarchy:
+   h1 ~1.55x, h2 ~1.35x, h3 ~1.15x of body size. */
 .vp-doc h1 {
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  font-size: calc(var(--reader-font-size) * 1.55);
+  line-height: 1.25;
+  text-wrap: balance;
 }
 
-.vp-doc h2,
+.vp-doc h2 {
+  text-align: center;
+  scroll-margin-top: 80px;
+  font-size: calc(var(--reader-font-size) * 1.35);
+  line-height: 1.3;
+}
+
 .vp-doc h3 {
   text-align: center;
   scroll-margin-top: 80px;
+  font-size: calc(var(--reader-font-size) * 1.15);
+  line-height: 1.35;
 }
 
 .vp-doc blockquote,
@@ -103,28 +109,40 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Focus mode (spec 009): distraction-free reader.
-   Class toggled on <html> by Layout.vue when focus active.
-   Hides all VitePress chrome + widens content; exit button stays. */
-.focus-mode .VPNav,
-.focus-mode .VPSidebar,
-.focus-mode .VPLocalNav,
-.focus-mode .VPDocFooter,
-.focus-mode .VPFooter,
-.focus-mode .VPNavBar,
-.focus-mode .VPDocAside {
-  display: none !important;
+/* Chapter pager (VitePress docFooter): show LARGE directional arrows
+   flush to the left/right edge of each pager button so elderly readers
+   identify direction at a glance. Arrow height ~80% of button via 2.5em
+   font-size on a positioned pseudo-element. */
+.VPDocFooter .pager-link {
+  position: relative;
 }
-
-.focus-mode .VPContent {
-  padding-top: 1.5rem !important;
-  padding-bottom: 1.5rem !important;
+.VPDocFooter .pager-link.prev {
+  padding-left: 2.75rem;
 }
-
-.focus-mode .vp-doc {
-  max-width: 70ch !important;
-  margin-inline: auto !important;
-  padding-bottom: 2rem;
+.VPDocFooter .pager-link.next {
+  padding-right: 2.75rem;
+}
+.VPDocFooter .pager-link.prev::before,
+.VPDocFooter .pager-link.next::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2em;
+  line-height: 1;
+  font-weight: 700;
+  color: var(--vp-c-text-2);
+}
+.VPDocFooter .pager-link.prev::before {
+  content: "‹";
+  left: 0.75rem;
+}
+.VPDocFooter .pager-link.next::after {
+  content: "›";
+  right: 0.75rem;
+}
+.VPDocFooter .pager-link:hover.prev::before,
+.VPDocFooter .pager-link:hover.next::after {
+  color: var(--vp-c-brand-1);
 }
 
 /* Print stylesheet (spec 012-print-stylesheet).

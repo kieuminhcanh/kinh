@@ -7,7 +7,9 @@ kinh: true
 
 # Kinh Diệu Pháp Liên Hoa
 
-## Mục lục1. [Phẩm 1: Tựa](./01-pham-1-tua)
+## Mục lục
+
+1. [Phẩm 1: Tựa](./01-pham-1-tua)
 
 2. [Phẩm 2: Phương tiện](./02-pham-2-phuong-tien)
 3. [Phẩm 3: Thí dụ](./03-pham-3-thi-du)

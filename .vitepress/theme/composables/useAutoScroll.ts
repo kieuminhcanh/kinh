@@ -7,7 +7,12 @@ const SPEED_MAP: Record<AutoScrollSpeed, number> = {
   fast: 2,
 };
 
-const RESUME_DELAY_MS = 3000;
+// Resume auto-scroll quickly after the user lets go. Short debounce avoids
+// fighting momentum scrolling / inertial touch flicks; long enough to feel
+// intentional. User asked for "continue from current position" rather than
+// "wait then catch up", which is already how this works (scrollBy uses
+// window.scrollY at each tick) — just trim the pause so it feels responsive.
+const RESUME_DELAY_MS = 1500;
 
 // Keys that count as a manual scroll intent.
 const PAUSE_KEYS = new Set([

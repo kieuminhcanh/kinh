@@ -6,7 +6,8 @@
   "home": {
     "heading": "Buddhist Sutras",
     "columns": "Columns",
-    "search": "Search"
+    "search": "Search",
+    "language": "Language"
   },
   "settings": {
     "title": "Settings",
@@ -14,8 +15,8 @@
     "theme": {
       "label": "Theme",
       "light": "Light",
-      "sepia": "Sepia",
-      "dark": "Dark"
+      "dark": "Dark",
+      "auto": "Auto"
     },
     "fontFamily": {
       "label": "Font",
@@ -36,15 +37,9 @@
       "slow": "Slow",
       "normal": "Normal",
       "fast": "Fast"
-    },
-    "eyeRest": {
-      "label": "Eye-rest reminder",
-      "hint": "Gentle nudge every 25 minutes of continuous reading."
     }
   },
   "reader": {
-    "bookmark": "Bookmark this page",
-    "unbookmark": "Remove bookmark",
     "play": "Read aloud",
     "pause": "Pause reading",
     "resume": "Resume reading",
@@ -55,58 +50,17 @@
       "start": "Start auto-scroll",
       "stop": "Stop auto-scroll"
     },
-    "focus": {
-      "exit": "Exit focus mode"
-    },
     "bar": {
-      "bookmark": "Bookmark",
-      "history": "History",
       "tts": "Read",
       "ttsPause": "Pause",
       "ttsResume": "Resume",
       "ttsStop": "Stop",
       "autoScroll": "Auto",
       "autoScrollStop": "Stop scroll",
-      "focus": "Focus",
       "settings": "Settings",
       "fontDecrease": "Decrease font size",
       "fontIncrease": "Increase font size"
     }
-  },
-  "history": {
-    "title": "Reading history",
-    "open": "Open history",
-    "close": "Close",
-    "tab": {
-      "bookmarks": "Bookmarks",
-      "reading": "In progress"
-    },
-    "empty": {
-      "bookmarks": "No bookmarks yet. Tap the bookmark button while reading to save.",
-      "reading": "No pages in progress. Open a sutra to begin."
-    },
-    "removeOne": "Remove this item",
-    "clearAll": "Clear all",
-    "confirmClear": "Clear all? This cannot be undone.",
-    "confirmYes": "Clear",
-    "confirmNo": "Cancel",
-    "percent": "{n}%"
-  },
-  "continueReading": {
-    "label": "Continue reading",
-    "dismiss": "Dismiss this item"
-  },
-  "voice": {
-    "button": "Voice",
-    "listening": "Listening",
-    "start": "Start voice commands",
-    "stop": "Stop voice commands"
-  },
-  "eyeRest": {
-    "title": "Rest your eyes",
-    "body": "You’ve been reading for 25 minutes. Look 20 feet away for 30 seconds to relax your eyes.",
-    "rested": "Done resting",
-    "muteToday": "Mute today"
   },
   "schedule": {
     "title": "Recitation schedule",

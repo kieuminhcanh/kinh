@@ -50,7 +50,7 @@ onBeforeUnmount(() => {
 
 <template>
   <div
-    class="fixed top-0 left-0 right-0 z-30 h-1 bg-base-300/50 pointer-events-none print:hidden"
+    class="fixed top-0 left-0 right-0 z-30 h-1 bg-[--vp-c-divider] pointer-events-none print:hidden"
     role="progressbar"
     :aria-label="t('reader.progress')"
     :aria-valuenow="pctInt"
@@ -58,13 +58,13 @@ onBeforeUnmount(() => {
     aria-valuemax="100"
   >
     <div
-      class="h-full bg-primary"
+      class="h-full bg-[--vp-c-brand-1]"
       :class="reduceMotion ? '' : 'transition-[width] duration-150 ease-out'"
       :style="{ width: `${pctInt}%` }"
     />
     <span
       v-if="pct > 0.05"
-      class="absolute top-1.5 right-2 text-xs font-medium text-base-content/80 bg-base-100/80 px-1.5 py-0.5 rounded shadow-sm"
+      class="absolute top-1.5 right-2 text-xs font-medium text-[--vp-c-text-2] bg-[--vp-c-bg]/80 px-1.5 py-0.5 rounded shadow-sm"
       aria-hidden="true"
     >
       {{ pctInt }}%

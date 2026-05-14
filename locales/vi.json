@@ -6,7 +6,8 @@
   "home": {
     "heading": "Kinh Phật",
     "columns": "Số cột",
-    "search": "Tìm kiếm"
+    "search": "Tìm kiếm",
+    "language": "Ngôn ngữ"
   },
   "settings": {
     "title": "Cài đặt",
@@ -14,8 +15,8 @@
     "theme": {
       "label": "Giao diện",
       "light": "Sáng",
-      "sepia": "Sepia",
-      "dark": "Tối"
+      "dark": "Tối",
+      "auto": "Tự động"
     },
     "fontFamily": {
       "label": "Phông chữ",
@@ -36,15 +37,9 @@
       "slow": "Chậm",
       "normal": "Vừa",
       "fast": "Nhanh"
-    },
-    "eyeRest": {
-      "label": "Nhắc nghỉ mắt",
-      "hint": "Nhắc nhẹ sau mỗi 25 phút đọc liên tục."
     }
   },
   "reader": {
-    "bookmark": "Đánh dấu trang này",
-    "unbookmark": "Bỏ đánh dấu",
     "play": "Đọc to",
     "pause": "Tạm dừng đọc",
     "resume": "Tiếp tục đọc",
@@ -55,58 +50,17 @@
       "start": "Bật tự cuộn",
       "stop": "Ngừng tự cuộn"
     },
-    "focus": {
-      "exit": "Thoát chế độ tập trung"
-    },
     "bar": {
-      "bookmark": "Đánh dấu",
-      "history": "Lịch sử",
       "tts": "Đọc to",
       "ttsPause": "Tạm dừng",
       "ttsResume": "Tiếp tục",
       "ttsStop": "Dừng",
       "autoScroll": "Tự cuộn",
       "autoScrollStop": "Dừng cuộn",
-      "focus": "Tập trung",
       "settings": "Cài đặt",
       "fontDecrease": "Giảm cỡ chữ",
       "fontIncrease": "Tăng cỡ chữ"
     }
-  },
-  "history": {
-    "title": "Lịch sử đọc",
-    "open": "Mở lịch sử",
-    "close": "Đóng",
-    "tab": {
-      "bookmarks": "Đánh dấu",
-      "reading": "Đang đọc"
-    },
-    "empty": {
-      "bookmarks": "Chưa có đánh dấu nào. Bấm nút đánh dấu khi đang đọc để lưu lại.",
-      "reading": "Chưa có trang nào đang đọc dở. Mở một kinh để bắt đầu."
-    },
-    "removeOne": "Xoá mục này",
-    "clearAll": "Xoá tất cả",
-    "confirmClear": "Xoá tất cả? Không thể hoàn tác.",
-    "confirmYes": "Xoá",
-    "confirmNo": "Huỷ",
-    "percent": "{n}%"
-  },
-  "continueReading": {
-    "label": "Đọc tiếp",
-    "dismiss": "Bỏ qua mục này"
-  },
-  "voice": {
-    "button": "Lệnh giọng",
-    "listening": "Đang nghe",
-    "start": "Bật lệnh giọng",
-    "stop": "Tắt lệnh giọng"
-  },
-  "eyeRest": {
-    "title": "Nghỉ mắt một chút",
-    "body": "Bạn đã đọc 25 phút. Hãy nhìn xa 20 bước trong 30 giây để mắt thư giãn.",
-    "rested": "Đã nghỉ",
-    "muteToday": "Tắt hôm nay"
   },
   "schedule": {
     "title": "Lịch tụng kinh",

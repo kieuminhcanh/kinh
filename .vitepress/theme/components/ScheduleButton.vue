@@ -10,7 +10,7 @@ const open = ref(false);
 <template>
   <button
     type="button"
-    class="btn btn-sm min-h-11 gap-2"
+    class="inline-flex items-center justify-center gap-2 min-h-11 px-3 rounded-md text-sm font-medium text-[--vp-c-text-1] bg-[--vp-c-bg-soft] border border-[--vp-c-divider] hover:bg-[--vp-c-bg-mute] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[--vp-c-brand-1] transition-colors"
     :aria-label="t('schedule.open')"
     @click="open = true"
   >

@@ -73,9 +73,9 @@ Allowed: project-scoped commands per `AGENTS.md` §5 (`bun run *`, `git` read-on
 
 ## Repo-specific cautions
 
-- `scripts/split-chapters.ts` writes to `content/<slug>/**/*.md` — owner approval before re-running (overwrites existing chapter files).
+- `scripts/split-chapters.ts` writes to `<slug>/**/*.md` at repo root — owner approval before re-running (overwrites existing chapter files). Script paths in `sources[]` still reference `content/<slug>/` historically; update before re-running.
 - `public/images/**` — owner-curated assets; never auto-generate or delete.
-- `content/**/*.md` body — sacred source material. Never auto-edit (AGENTS §2 hard rule #6).
+- `<slug>/**/*.md` body — sacred source material. Never auto-edit (AGENTS §2 hard rule #6).
 - `.vitepress/cache/` and `.vitepress/dist/` — generated, in `.gitignore`. Never edit by hand.
 
 ## GitHub Pages

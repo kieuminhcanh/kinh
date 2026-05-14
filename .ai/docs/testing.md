@@ -15,7 +15,6 @@ Config: `vitest.config.ts` at repo root (if absent, Vitest picks up `vite.config
 | Composable                     | Test? | Reason                                                                    |
 | ------------------------------ | ----- | ------------------------------------------------------------------------- |
 | `useSettings.ts`               | ✅    | `localStorage` schema + `applySettings` DOM apply                         |
-| `useBookmarks.ts`              | ✅    | add/remove/has logic + FIFO cap + positions update                        |
 | `useTts.ts`                    | ⚠️    | Wraps `useSpeechSynthesis` (VueUse-tested). Skip unless adding own logic. |
 | New custom composable          | ✅    | If it has branches / mutations / cleanup logic.                           |
 | Pure utility (slug, format, …) | ✅    | Simple, fast, high value.                                                 |
@@ -25,7 +24,6 @@ Config: `vitest.config.ts` at repo root (if absent, Vitest picks up `vite.config
 ```
 tests/
 ├── useSettings.test.ts
-├── useBookmarks.test.ts
 └── utils/slug.test.ts          # if utilities extracted
 ```
 
