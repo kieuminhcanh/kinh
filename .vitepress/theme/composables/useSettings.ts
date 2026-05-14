@@ -2,7 +2,6 @@ import { useColorMode, useLocalStorage } from "@vueuse/core";
 import { watch, watchEffect } from "vue";
 
 export type Theme = "light" | "dark" | "auto";
-export type Locale = "vi" | "en" | "";
 export type AutoScrollSpeed = "slow" | "normal" | "fast";
 
 export type Settings = {
@@ -13,7 +12,6 @@ export type Settings = {
   ttsRate: number; // 0.5..2
   ttsVoice: string; // voiceURI
   fontFamily: "serif" | "sans";
-  locale: Locale; // '' = uninitialized, resolved on first boot
   autoScrollSpeed: AutoScrollSpeed;
 };
 
@@ -25,7 +23,6 @@ const DEFAULT: Settings = {
   ttsRate: 1,
   ttsVoice: "",
   fontFamily: "serif",
-  locale: "",
   autoScrollSpeed: "normal",
 };
 
@@ -36,12 +33,14 @@ export function useSettings() {
     _settings = useLocalStorage<Settings>("kinh:settings", DEFAULT, {
       mergeDefaults: true,
     });
-    const s = _settings.value;
+    const s = _settings.value as Settings & { locale?: unknown };
     // A11y migration: silent bump legacy values below new floors.
     if (s.fontSize < 16) s.fontSize = 16;
     if (s.lineHeight < 1.6) s.lineHeight = 1.6;
     // Spec 016: drop sepia → migrate silently to auto.
     if ((s.theme as string) === "sepia") s.theme = "auto";
+    // Locale dropped from persisted settings — always defaults to vi at runtime.
+    if ("locale" in s) delete s.locale;
   }
   return _settings;
 }

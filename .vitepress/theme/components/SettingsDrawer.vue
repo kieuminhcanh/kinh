@@ -1,12 +1,8 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { useI18n } from "vue-i18n";
-import {
-  useSettings,
-  type Theme,
-  type Locale,
-  type AutoScrollSpeed,
-} from "../composables/useSettings";
+import { useSettings, type Theme, type AutoScrollSpeed } from "../composables/useSettings";
+import { currentLocale, type Locale } from "../i18n";
 import { useTts } from "../composables/useTts";
 
 withDefaults(defineProps<{ showTrigger?: boolean }>(), { showTrigger: true });
@@ -18,7 +14,7 @@ const { voices, isSupported: ttsSupported } = useTts();
 
 const themes: Theme[] = ["light", "auto", "dark"];
 const themeIcons: Record<Theme, string> = { light: "☀️", auto: "🖥️", dark: "🌙" };
-const locales: { value: Exclude<Locale, "">; label: string }[] = [
+const locales: { value: Locale; label: string }[] = [
   { value: "vi", label: "Tiếng Việt" },
   { value: "en", label: "English" },
 ];
@@ -100,8 +96,8 @@ const pickerInactive = "";
               v-for="l in locales"
               :key="l.value"
               type="button"
-              :class="[pickerBase, settings.locale === l.value ? pickerActive : pickerInactive]"
-              @click="settings.locale = l.value"
+              :class="[pickerBase, currentLocale === l.value ? pickerActive : pickerInactive]"
+              @click="currentLocale = l.value"
             >
               {{ l.label }}
             </button>

@@ -1,8 +1,7 @@
-import { watch } from "vue";
+import { ref, watch } from "vue";
 import { createI18n } from "vue-i18n";
 import vi from "../../locales/vi.json";
 import en from "../../locales/en.json";
-import { useSettings } from "./composables/useSettings";
 
 export type Locale = "vi" | "en";
 
@@ -21,33 +20,27 @@ if (g.__INTLIFY_JIT_COMPILATION__ === undefined) g.__INTLIFY_JIT_COMPILATION__ =
 if (g.__INTLIFY_DROP_MESSAGE_COMPILER__ === undefined) g.__INTLIFY_DROP_MESSAGE_COMPILER__ = false;
 
 /**
- * Detect default locale: respect saved setting, else navigator language, else 'vi'.
+ * Runtime locale (NOT persisted). Default `vi` on every page load.
+ * User can switch to `en` for the current session via SettingsDrawer;
+ * reload restores `vi`. Intentional UX choice — Vietnamese is the canonical
+ * language for the kinh content.
  */
-function detectDefault(): Locale {
-  if (typeof navigator === "undefined") return "vi";
-  return navigator.language?.toLowerCase().startsWith("vi") ? "vi" : "en";
-}
+export const currentLocale = ref<Locale>("vi");
 
 export function setupI18n() {
-  const settings = useSettings();
-  // First boot: locale = '' → pick smart default and persist
-  if (!settings.value.locale) {
-    settings.value.locale = detectDefault();
-  }
   const i18n = createI18n({
     legacy: false,
-    locale: settings.value.locale || "vi",
+    locale: "vi",
     fallbackLocale: "vi",
     messages,
   });
-  // Keep i18n in sync with settings.locale (client only — settings persist on client)
-  if (typeof window !== "undefined") {
-    watch(
-      () => settings.value.locale,
-      (l) => {
-        if (l) i18n.global.locale.value = l;
-      },
-    );
-  }
+  // Sync runtime ref → i18n locale (no persistence layer).
+  watch(
+    currentLocale,
+    (l) => {
+      i18n.global.locale.value = l;
+    },
+    { immediate: true },
+  );
   return i18n;
 }
