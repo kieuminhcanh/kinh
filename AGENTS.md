@@ -98,6 +98,17 @@ Pre-flight before ANY impl → `lookup.md` §Pre-flight.
 - Sidebar is auto-generated from `content/<slug>/` file listing in `config.ts`.
 - `base: '/kinh/'` — never hardcode `/kinh/` in components; use `withBase()` from VitePress or relative paths.
 
+**Customization priority (MANDATORY — follow in order, stop at first that works):**
+
+1. **`themeConfig` flag** in `config.ts` — e.g. `aside: false`, `outline: false`, `docFooter`, `lastUpdated`. Docs: `https://vitepress.dev/reference/default-theme-config`.
+2. **Frontmatter option** per page — e.g. `sidebar: false`, `aside: false`, `outline: false`, `layout: page`, `pageClass`. Docs: `https://vitepress.dev/reference/frontmatter-config`.
+3. **Layout slot** via wrapper `<Layout>` in `.vitepress/theme/Layout.vue` — slots: `doc-top`, `doc-bottom`, `doc-before`, `doc-after`, `doc-footer-before`, `sidebar-nav-before/after`, `aside-top/bottom`, `aside-outline-before/after`, `layout-top/bottom`, `nav-bar-*`, `home-*`. Docs: `https://vitepress.dev/guide/extending-default-theme#layout-slots`.
+4. **CSS variable override** in `style.css` — `--vp-c-*`, `--vp-sidebar-width`, `--vp-layout-max-width`, etc. Docs: `https://vitepress.dev/reference/default-theme-config` + theme `vars.css`.
+5. **CSS class override** (`!important` on `.VP*` classes) — only when 1–4 cannot achieve the goal. Keep minimal: lines, scope, blast radius. Document why native option does not work.
+6. **Vite alias component override** — last resort. Replace internal component (e.g. `VPNavBar.vue`) via `vite.resolve.alias`. Docs: `https://vitepress.dev/guide/extending-default-theme#overriding-internal-components`.
+
+Never skip levels. Before writing CSS for a UI tweak: search `themeConfig` + frontmatter docs first. Owner has called this out — violating the order is a process bug.
+
 ## 5. Ops
 
 Commands (bun only, repo root — per §2 hard rules):
