@@ -37,18 +37,6 @@ html {
   line-height: var(--reader-line-height);
 }
 
-/* Hide VitePress default search trigger — replaced by labeled
-   "Search" button on Home. We keep the element in the DOM (offscreen)
-   so we can call `.click()` on it; Cmd+K shortcut also still works. */
-.VPNavBarSearch {
-  position: absolute !important;
-  left: -9999px !important;
-  top: -9999px !important;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-
 /* Hide VitePress's native appearance (dark/light) toggle in the nav.
    Theme is controlled via SettingsDrawer; the duplicate nav button confuses
    elderly users. `appearance: true` in config stays on so the underlying
@@ -70,6 +58,18 @@ html {
    (collapsed appearance + translation menu on narrow screens). */
 .VPNavBarExtra {
   display: none !important;
+}
+
+/* Hide VitePress left sidebar (chapter list). Right outline aside is
+   disabled via `aside: false` + `outline: false` in config.ts. Sidebar
+   config stays in config.ts so ChapterPagerTop can read theme.sidebar
+   data to compute prev/next links; only its rendered surface is hidden. */
+.VPSidebar,
+.VPLocalNav {
+  display: none !important;
+}
+.VPContent.has-sidebar {
+  padding-left: 0 !important;
 }
 
 /* Scale headings with reader font-size. VitePress pins them to fixed px
@@ -168,8 +168,7 @@ html {
   .VPSidebar,
   .VPLocalNav,
   .VPDocFooter,
-  .VPFooter,
-  .VPNavBarSearch {
+  .VPFooter {
     display: none !important;
   }
 

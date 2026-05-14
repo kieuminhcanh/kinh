@@ -65,34 +65,11 @@ export default defineConfig({
     siteTitle: "Kinh",
     nav: [{ text: "Trang chủ", link: "/" }],
     sidebar,
-    search: {
-      provider: "local",
-      options: {
-        locales: {
-          root: {
-            translations: {
-              button: { buttonText: "Tìm kiếm", buttonAriaLabel: "Tìm kiếm" },
-              modal: {
-                displayDetails: "Hiển thị chi tiết",
-                resetButtonTitle: "Đặt lại tìm kiếm",
-                backButtonTitle: "Đóng tìm kiếm",
-                noResultsText: "Không tìm thấy kết quả cho",
-                footer: {
-                  selectText: "chọn",
-                  selectKeyAriaLabel: "enter",
-                  navigateText: "di chuyển",
-                  navigateUpKeyAriaLabel: "mũi tên lên",
-                  navigateDownKeyAriaLabel: "mũi tên xuống",
-                  closeText: "đóng",
-                  closeKeyAriaLabel: "esc",
-                },
-              },
-            },
-          },
-        },
-      },
-    },
-    outline: { level: [2, 3], label: "Trên trang này" },
+    // Full-width reader: disable right outline aside ("Trên trang này").
+    // Left sidebar still configured below so ChapterPagerTop can read
+    // theme.sidebar data to compute prev/next; rendering hidden via CSS.
+    aside: false,
+    outline: false,
     docFooter: { prev: "Phẩm trước", next: "Phẩm sau" },
     darkModeSwitchLabel: "Giao diện",
     sidebarMenuLabel: "Mục lục",
