@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Noto+Serif:wght@400;700&display=swap");
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes:
+    light --default,
+    dark --prefersdark,
+    sepia;
+}
+
+@plugin "daisyui/theme" {
+  name: "sepia";
+  default: false;
+  prefersdark: false;
+  color-scheme: light;
+  --color-base-100: oklch(95% 0.04 85);
+  --color-base-200: oklch(92% 0.05 85);
+  --color-base-300: oklch(88% 0.06 85);
+  --color-base-content: oklch(25% 0.04 60);
+  --color-primary: oklch(45% 0.12 60);
+  --color-primary-content: oklch(98% 0.02 85);
+  --color-secondary: oklch(55% 0.1 50);
+  --color-secondary-content: oklch(98% 0.02 85);
+  --color-accent: oklch(60% 0.15 40);
+  --color-accent-content: oklch(98% 0.02 85);
+  --color-neutral: oklch(30% 0.04 60);
+  --color-neutral-content: oklch(95% 0.04 85);
+  --color-info: oklch(60% 0.12 230);
+  --color-info-content: oklch(98% 0.01 230);
+  --color-success: oklch(60% 0.15 140);
+  --color-success-content: oklch(98% 0.01 140);
+  --color-warning: oklch(70% 0.15 80);
+  --color-warning-content: oklch(20% 0.04 80);
+  --color-error: oklch(55% 0.2 25);
+  --color-error-content: oklch(98% 0.01 25);
+  --radius-selector: 0.5rem;
+  --radius-field: 0.5rem;
+  --radius-box: 0.75rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+}
+
+/* Reader font + spacing — controlled by JS via CSS vars on :root */
+:root {
+  --reader-font-size: 18px;
+  --reader-line-height: 1.8;
+  --reader-font-family: "Noto Serif", "Be Vietnam Pro", Georgia, serif;
+}
+
+html {
+  font-family: var(--reader-font-family);
+}
+
+/* Reader article — VitePress wraps page content in .vp-doc */
+.vp-doc {
+  font-size: var(--reader-font-size);
+  line-height: var(--reader-line-height);
+  /* Leave space for fixed bottom bar (reader page only).
+     Home page does not render the bar; extra padding there is harmless. */
+  padding-bottom: 5rem;
+}
+
+/* Hide VitePress default search trigger — replaced by labeled
+   "Search" button on Home. We keep the element in the DOM (offscreen)
+   so we can call `.click()` on it; Cmd+K shortcut also still works. */
+.VPNavBarSearch {
+  position: absolute !important;
+  left: -9999px !important;
+  top: -9999px !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* A11y: enforce WCAG 2.5.5 target size ≥ 44×44 for compact buttons.
+   DaisyUI `btn-sm` defaults below 44; global override avoids per-button edits. */
+.btn-sm {
+  min-height: 2.75rem;
+  min-width: 2.75rem;
+}
+
+.vp-doc h1 {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.vp-doc h2,
+.vp-doc h3 {
+  text-align: center;
+  scroll-margin-top: 80px;
+}
+
+.vp-doc blockquote,
+.vp-doc pre {
+  font-style: italic;
+}
+
+/* Smooth scroll for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus mode (spec 009): distraction-free reader.
+   Class toggled on <html> by Layout.vue when focus active.
+   Hides all VitePress chrome + widens content; exit button stays. */
+.focus-mode .VPNav,
+.focus-mode .VPSidebar,
+.focus-mode .VPLocalNav,
+.focus-mode .VPDocFooter,
+.focus-mode .VPFooter,
+.focus-mode .VPNavBar,
+.focus-mode .VPDocAside {
+  display: none !important;
+}
+
+.focus-mode .VPContent {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
+.focus-mode .vp-doc {
+  max-width: 70ch !important;
+  margin-inline: auto !important;
+  padding-bottom: 2rem;
+}
+
+/* Print stylesheet (spec 012-print-stylesheet).
+   Elderly readers often print kinh to read offline / at temple.
+   Force black-on-white, hide all chrome, optimize page breaks.
+   Custom fixed UI surfaces (bottom bar, progress bar, continue card)
+   carry `print:hidden` Tailwind variant on their root element. */
+@media print {
+  html,
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14pt;
+    line-height: 1.6;
+  }
+
+  /* Hide VitePress chrome */
+  .VPNav,
+  .VPSidebar,
+  .VPLocalNav,
+  .VPDocFooter,
+  .VPFooter,
+  .VPNavBarSearch {
+    display: none !important;
+  }
+
+  /* Expand content to full page width */
+  .vp-doc {
+    font-size: 14pt !important;
+    line-height: 1.6 !important;
+    font-family: Georgia, "Times New Roman", serif !important;
+    max-width: none !important;
+    padding: 0 !important;
+  }
+
+  /* Page break control */
+  .vp-doc h1,
+  .vp-doc h2,
+  .vp-doc h3 {
+    page-break-after: avoid;
+    break-after: avoid;
+    color: #000 !important;
+  }
+
+  .vp-doc p,
+  .vp-doc li,
+  .vp-doc blockquote {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* Strip link styling, append URL for external links */
+  .vp-doc a {
+    color: #000 !important;
+    text-decoration: underline;
+  }
+
+  .vp-doc a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.85em;
+    color: #555;
+  }
+}

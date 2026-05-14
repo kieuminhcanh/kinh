@@ -1,4 +1,19 @@
 {
-  // https://nuxt.com/docs/guide/concepts/typescript
-  "extends": "./.nuxt/tsconfig.json"
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": false,
+    "noEmit": true,
+    "isolatedModules": true,
+    "types": ["vite/client", "vite-plugin-pwa/client"],
+    "lib": ["ESNext", "DOM", "DOM.Iterable"]
+  },
+  "include": [".vitepress/**/*.ts", ".vitepress/**/*.vue", "scripts/**/*.ts"],
+  "exclude": ["node_modules", ".vitepress/cache", ".vitepress/dist"]
 }

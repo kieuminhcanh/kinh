@@ -1,0 +1,43 @@
+# VitePress
+
+> Vite & Vue Powered Static Site Generator
+
+Markdown to beautiful docs in minutes
+
+## Table of Contents
+
+- [Asset Handling](/guide/asset-handling.md): Learn how to reference and handle static assets such as images, media, and fonts in VitePress.
+- [Badge](/reference/default-theme-badge.md): Use the Badge component to add status labels to headers in VitePress documentation.
+- [Build-Time Data Loading](/guide/data-loading.md): Load arbitrary data at build time using VitePress data loaders and import it from pages or components.
+- [Carbon Ads](/reference/default-theme-carbon-ads.md): Integrate Carbon Ads into your VitePress site using the default theme's built-in support.
+- [Command Line Interface](/reference/cli.md): Reference of VitePress CLI commands including dev, build, preview, and init.
+- [Connecting to a CMS](/guide/cms.md): Connect VitePress to a headless CMS using dynamic routes and data loaders.
+- [Default Theme Config](/reference/default-theme-config.md): Reference of all configuration options available for the VitePress default theme.
+- [Deploy Your VitePress Site](/guide/deploy.md): Deploy your VitePress site to popular platforms like Netlify, Vercel, GitHub Pages, and more.
+- [Edit Link](/reference/default-theme-edit-link.md): Display an edit link on doc pages to let users suggest changes on GitHub or GitLab.
+- [Extending the Default Theme](/guide/extending-default-theme.md): Customize and extend the VitePress default theme with custom CSS, components, layouts, and slots.
+- [Footer](/reference/default-theme-footer.md): Configure the global footer displayed at the bottom of VitePress pages.
+- [Frontmatter](/guide/frontmatter.md): Learn how to use YAML frontmatter in VitePress Markdown files to control page-level metadata and behavior.
+- [Frontmatter Config](/reference/frontmatter-config.md): Reference of all available frontmatter configuration options for VitePress Markdown pages.
+- [Getting Started](/guide/getting-started.md): Get up and running with VitePress. Learn how to install, scaffold, and start developing your documentation site.
+- [Home Page](/reference/default-theme-home-page.md): Configure the VitePress default theme home page layout with hero sections, features, and custom content.
+- [Internationalization](/guide/i18n.md): Set up internationalization (i18n) in VitePress to support multiple languages for your site.
+- [Last Updated](/reference/default-theme-last-updated.md): Show the last updated timestamp on VitePress pages based on Git commit history.
+- [Layout](/reference/default-theme-layout.md): Choose between doc, page, and home layouts in the VitePress default theme.
+- [Markdown Extensions](/guide/markdown.md): VitePress built-in Markdown extensions including custom containers, code blocks with syntax highlighting, line highlighting, code groups, and more.
+- [Migration from VitePress 0.x](/guide/migration-from-vitepress-0.md)
+- [Migration from VuePress](/guide/migration-from-vuepress.md)
+- [MPA Mode&#x20;](/guide/mpa-mode.md): Enable MPA (Multi-Page Application) mode in VitePress for zero-JavaScript pages with better initial performance.
+- [Nav](/reference/default-theme-nav.md): Configure the navigation bar in the VitePress default theme including site title, logo, and menu links.
+- [Prev Next Links](/reference/default-theme-prev-next-links.md): Customize the previous and next page links displayed at the bottom of doc pages in VitePress.
+- [Routing](/guide/routing.md): Understand VitePress file-based routing, dynamic routes, clean URLs, and path rewrites.
+- [Runtime API](/reference/runtime-api.md): Reference of VitePress runtime APIs including composables, helper functions, and built-in components.
+- [Search](/reference/default-theme-search.md): Set up local or Algolia-powered search for your VitePress site.
+- [Sidebar](/reference/default-theme-sidebar.md): Configure the sidebar navigation in the VitePress default theme with groups, collapsible sections, and multiple sidebars.
+- [Site Config](/reference/site-config.md): Complete reference of VitePress site configuration options including app-level settings, theming, and build options.
+- [Sitemap Generation](/guide/sitemap-generation.md): Generate a sitemap.xml file for your VitePress site to improve search engine discoverability.
+- [SSR Compatibility](/guide/ssr-compat.md): Ensure your VitePress theme components and custom code are compatible with server-side rendering.
+- [Team Page](/reference/default-theme-team-page.md): Create team pages with member profiles using VitePress built-in team components.
+- [Using a Custom Theme](/guide/custom-theme.md): Create and use a custom theme in VitePress to fully control the look and feel of your site.
+- [Using Vue in Markdown](/guide/using-vue.md): Use Vue components and dynamic templating features directly inside Markdown files in VitePress.
+- [What is VitePress?](/guide/what-is-vitepress.md): VitePress is a static site generator designed for building fast, content-centric websites powered by Vite and Vue.

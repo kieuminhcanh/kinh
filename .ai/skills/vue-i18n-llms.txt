@@ -1,0 +1,75 @@
+# Vue I18n
+
+> Internationalization plugin for Vue.js
+
+Easy, powerful, and component-oriented for Vue.js
+
+## Table of Contents
+
+### Introduction
+
+- [What is Vue I18n?](/guide/introduction.md)
+- [Installation](/guide/installation.md)
+- [Maintenance Status](/guide/maintenance.md)
+
+### Essentials
+
+- [Getting started](/guide/essentials/started.md)
+- [Message Format Syntax](/guide/essentials/syntax.md)
+- [Pluralization](/guide/essentials/pluralization.md)
+- [Datetime Formatting](/guide/essentials/datetime.md)
+- [Number Formatting](/guide/essentials/number.md)
+- [Scope and Locale Changing](/guide/essentials/scope.md)
+- [Fallbacking](/guide/essentials/fallback.md)
+- [Local Scope Based Localization](/guide/essentials/local.md)
+
+### Advanced
+
+- [Component Interpolation](/guide/advanced/component.md)
+- [Single file components](/guide/advanced/sfc.md)
+- [Lazy loading](/guide/advanced/lazy.md)
+- [Messages Functions](/guide/advanced/function.md)
+- [Composition API](/guide/advanced/composition.md)
+- [TypeScript Support](/guide/advanced/typescript.md)
+- [Web components](/guide/advanced/wc.md)
+- [Optimization](/guide/advanced/optimization.md)
+- [Custom Message Format](/guide/advanced/format.md)
+- [Small size subset of Vue I18n](/guide/advanced/lite.md)
+- [Custom Directive](/guide/advanced/directive.md)
+
+### Frameworks Integration
+
+- [Nuxt 3 integration](/guide/integrations/nuxt3.md)
+
+### Migrations
+
+- [Breaking Changes in v11](/guide/migration/breaking11.md)
+- [Breaking Changes in v10](/guide/migration/breaking10.md)
+- [Breaking Changes in v9](/guide/migration/breaking.md)
+- [New Features in v9](/guide/migration/features.md)
+- [Migration in Vue 3](/guide/migration/vue3.md)
+
+### Extra Topics
+
+- [Different Distribution files](/guide/extra/dist.md)
+- [Migration from Vue 2](/guide/migration/vue2.md)
+
+### API Reference
+
+- [General](/api/general.md)
+- [Legacy API](/api/legacy.md)
+- [Composition API](/api/composition.md)
+- [Components](/api/component.md)
+- [Directives](/api/directive.md)
+- [Component Injections](/api/injection.md)
+
+### Ecosystem
+
+- [Official tooling](/ecosystem/official.md)
+- [Third-party integrations](/ecosystem/integrations.md)
+- [Third-party tooling](/ecosystem/tools.md)
+
+### Other
+
+- [Documentation for v8.x](/guide/extra/v8-docs.md)
+- [Untitled](/index.md)

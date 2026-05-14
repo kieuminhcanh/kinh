@@ -1,0 +1,182 @@
+{
+  "site": {
+    "title": "Buddhist Sutras",
+    "description": "Namo Original Master Shakyamuni Buddha."
+  },
+  "home": {
+    "heading": "Buddhist Sutras",
+    "columns": "Columns",
+    "search": "Search"
+  },
+  "settings": {
+    "title": "Settings",
+    "close": "Close",
+    "theme": {
+      "label": "Theme",
+      "light": "Light",
+      "sepia": "Sepia",
+      "dark": "Dark"
+    },
+    "fontFamily": {
+      "label": "Font",
+      "serif": "Noto Serif",
+      "sans": "Be Vietnam Pro"
+    },
+    "fontSize": "Font size",
+    "lineHeight": "Line height",
+    "language": "Language",
+    "tts": {
+      "label": "Read aloud (TTS)",
+      "rate": "Speed",
+      "voice": "Voice",
+      "voiceDefault": "Default"
+    },
+    "autoScroll": {
+      "label": "Auto-scroll speed",
+      "slow": "Slow",
+      "normal": "Normal",
+      "fast": "Fast"
+    },
+    "eyeRest": {
+      "label": "Eye-rest reminder",
+      "hint": "Gentle nudge every 25 minutes of continuous reading."
+    }
+  },
+  "reader": {
+    "bookmark": "Bookmark this page",
+    "unbookmark": "Remove bookmark",
+    "play": "Read aloud",
+    "pause": "Pause reading",
+    "resume": "Resume reading",
+    "stop": "Stop reading",
+    "progress": "Reading progress",
+    "settings": "Settings",
+    "autoScroll": {
+      "start": "Start auto-scroll",
+      "stop": "Stop auto-scroll"
+    },
+    "focus": {
+      "exit": "Exit focus mode"
+    },
+    "bar": {
+      "bookmark": "Bookmark",
+      "history": "History",
+      "tts": "Read",
+      "ttsPause": "Pause",
+      "ttsResume": "Resume",
+      "ttsStop": "Stop",
+      "autoScroll": "Auto",
+      "autoScrollStop": "Stop scroll",
+      "focus": "Focus",
+      "settings": "Settings",
+      "fontDecrease": "Decrease font size",
+      "fontIncrease": "Increase font size"
+    }
+  },
+  "history": {
+    "title": "Reading history",
+    "open": "Open history",
+    "close": "Close",
+    "tab": {
+      "bookmarks": "Bookmarks",
+      "reading": "In progress"
+    },
+    "empty": {
+      "bookmarks": "No bookmarks yet. Tap the bookmark button while reading to save.",
+      "reading": "No pages in progress. Open a sutra to begin."
+    },
+    "removeOne": "Remove this item",
+    "clearAll": "Clear all",
+    "confirmClear": "Clear all? This cannot be undone.",
+    "confirmYes": "Clear",
+    "confirmNo": "Cancel",
+    "percent": "{n}%"
+  },
+  "continueReading": {
+    "label": "Continue reading",
+    "dismiss": "Dismiss this item"
+  },
+  "voice": {
+    "button": "Voice",
+    "listening": "Listening",
+    "start": "Start voice commands",
+    "stop": "Stop voice commands"
+  },
+  "eyeRest": {
+    "title": "Rest your eyes",
+    "body": "You’ve been reading for 25 minutes. Look 20 feet away for 30 seconds to relax your eyes.",
+    "rested": "Done resting",
+    "muteToday": "Mute today"
+  },
+  "schedule": {
+    "title": "Recitation schedule",
+    "button": "Schedule",
+    "open": "Open recitation schedule",
+    "add": "Add a schedule",
+    "save": "Save",
+    "delete": "Delete this schedule",
+    "empty": "No schedules yet. Tap + to add one.",
+    "next": "Next",
+    "field": {
+      "kinh": "Sutra",
+      "time": "Time",
+      "repeat": "Repeat",
+      "weekday": "Day of week",
+      "date": "Date"
+    },
+    "repeat": {
+      "daily": "Daily",
+      "weekly": "Weekly",
+      "once": "Once"
+    },
+    "weekday": {
+      "0": "Sunday",
+      "1": "Monday",
+      "2": "Tuesday",
+      "3": "Wednesday",
+      "4": "Thursday",
+      "5": "Friday",
+      "6": "Saturday"
+    },
+    "toast": {
+      "title": "Time to recite",
+      "body": "It's time to recite {kinh}.",
+      "open": "Open sutra",
+      "dismiss": "Dismiss"
+    }
+  },
+  "share": {
+    "button": "Share",
+    "heading": "Share this kinh",
+    "inviteText": "Read this sutra with me",
+    "copied": "Link copied",
+    "copyFailed": "Copy failed, please copy URL manually",
+    "ariaShare": "Share this sutra"
+  },
+  "kinh": {
+    "kinh-dieu-phap-lien-hoa": {
+      "title": "Lotus Sutra",
+      "description": "28 chapters — Saddharma Puṇḍarīka Sūtra"
+    },
+    "kinh-dia-tang": {
+      "title": "Kṣitigarbha Sutra",
+      "description": "13 chapters"
+    },
+    "kinh-duoc-su": {
+      "title": "Medicine Buddha Sutra",
+      "description": ""
+    },
+    "kinh-pho-hien": {
+      "title": "Samantabhadra's Vows Sutra",
+      "description": ""
+    },
+    "khai-kinh": {
+      "title": "Opening Sutra Ritual",
+      "description": ""
+    },
+    "nghi-thuc-cong-phu-khuya": {
+      "title": "Morning Recitation Ritual",
+      "description": ""
+    }
+  }
+}

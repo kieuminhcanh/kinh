@@ -1,6 +1,6 @@
 ---
-title: 'Kinh Dược Sư'
-image: '/images/kinh-duoc-su.jpg'
+title: "Kinh Dược Sư"
+image: "/images/kinh-duoc-su.jpg"
 ---
 
 Tôi nghe như vầy, một thuở nọ Đức Phật châu du giáo hóa đến thành Quảng Nghiêm dưới cây tiếng nhạc, cùng với tám ngàn Tỳ kheo, ba vạn sáu ngàn Bồ tát, bát bộ Thiên long, người với quỷ thần, Bà la môn, cư sĩ, quốc vương, đại thần cung kính thỉnh Phật thuyết pháp.
@@ -12,7 +12,6 @@ Bấy giờ Văn Thù Bồ tát nương Phật thần lực, quỳ gối chắp 
 Văn Thù Sư Lợi Bồ tát bạch rằng: "Chúng con muốn nghe. Cúi xin Thế Tôn mở lòng chỉ giáo”.
 
 Đức Phật liền bảo: "Này Văn Thù Sư Lợi, từ đây hướng đến phương Đông cách mười muôn ức cõi nước chư Phật có một thế giới tên là Tịnh Lưu Ly; Giáo chủ cõi này là Phật Dược Sư Lưu Ly Quang Vương Như Lai. Mọi người tôn kính, vì Ngài biết rõ thật tướng các pháp, giải được mọi việc xảy ra trong đời và vượt khó khăn, làm Thầy Trời người, là bậc tôn quý. Khi còn tu hạnh Bồ tát, có phát Mười hai Đại nguyện khiến cho hữu tình cầu chi được nấy.
-
 
 > Thứ nhất: Ta nguyện đời sau, khi chứng Vô thượng Bồ đề, hào quang của Ta chiếu khắp vô lượng vô biên thế giới, khiến chúng hữu tình thấy ánh quang này, thân tâm thanh tịnh, đủ tướng trượng phu, siêng tu Lục độ, rời biển trần khổ, vào chốn Niết Bàn.
 >
@@ -73,21 +72,21 @@ Bấy giờ, A Nan nói mạng đã hết, làm sao không chết, mà được 
 Cứu Thoát Bồ tát thưa liền: "Thế Tôn có dạy chín loại hoạnh hồn, cho nên ta khuyên làm phan và đèn tục mạng, để khỏi tai nạn, được sống lâu dài. Chín thứ hoạnh này thật chưa hết số, nhưng vì quá khổ, nên phải chết oan.
 
 > Thứ nhứt, người bệnh không đủ thuốc thang, không người chăm sóc, bệnh không đáng chết mà phải qua đời.
-> 
+>
 > Thứ hai, những kẻ chơi bời, đam mê tửu sắc.
-> 
+>
 > Thứ ba, bị bắt, bị xử tử hình.
-> 
+>
 > Thứ tư, chết chìm.
-> 
+>
 > Thứ năm, chết cháy.
-> 
+>
 > Thứ sáu, bị ác thú.
-> 
+>
 > Thứ bảy, rơi từ trên cao.
-> 
+>
 > Thứ tám, bị khổ đau vì lầm thuốc độc.
-> 
+>
 > Thứ chín, mai một vì thiếu thức ăn, phải bị chết oan, nên làm hoạnh tử.
 
 Lại nữa A Nan! Ở trên thế gian thường làm việc ác, Diêm vương xử phạt, nên giảm tuổi đời. Ta khuyên các người phóng sanh, tu phước, để được thọ mạng lâu dài”.
@@ -100,7 +99,7 @@ A Nan lại bạch: "Kinh gọi tên gì, làm sao thọ trì, xin Phật chỉ 
 
 Thế Tôn dạy rõ kinh gọi Dược Sư Lưu Ly Quang Vương Như Lai Bổn Nguyện Công Đức, hay Thập Nhị Thần Tướng Nhiêu Ích Hữu Tình Kết Nguyện Thần Chú, cũng gọi Bạt Trừ Nhứt Thiết Nghiệp Chướng, mà thọ trì.
 
-Phật nói lời này, chư đại Bồ tát, bát bộ Thiên long, tất cả thế gian, Đại đức A Nan, tám ngàn Thánh Tăng đều rất vui mừng, tín thọ phụng hành. 
+Phật nói lời này, chư đại Bồ tát, bát bộ Thiên long, tất cả thế gian, Đại đức A Nan, tám ngàn Thánh Tăng đều rất vui mừng, tín thọ phụng hành.
 
 DƯỢC SƯ QUÁN ĐẢNH CHƠN NGÔN
 
@@ -123,11 +122,11 @@ Nam mô bạt già phạt đế bệ sát xả, lủ rô thích lưu ly bác l�
 **NAM MÔ DƯỢC SƯ HỘI THƯỢNG PHẬT BỒ TÁT (3 lần)**
 
 > Mười hai thần tướng đại Dược Xoa
-> 
+>
 > Trợ tuyên Chánh pháp tại Ta bà
-> 
+>
 > Thiên long Bát bộ đều tùy hỷ
-> 
+>
 > Tà ma ngoại đạo phải tránh xa
 
 **NAM MÔ HỘ PHÁP CHƯ THIÊN BỒ TÁT MA HA TÁT (3 lần)**
@@ -139,9 +138,9 @@ Nam mô bạt già phạt đế bệ sát xả, lủ rô thích lưu ly bác l�
 Kính nguyện Phật Dược Sư giáng phước, Đức Di Lặc ban vui, Văn Thù khai cơ, Quan Âm thường cứu khổ. Vâng lời Phật Tổ, con mở hội Dược Sư, cầu mười hai Dược Xoa thần tướng phát tâm từ, xin Cứu Thoát Bồ tát thường gia hộ, khiến mọi người (bệnh nhân) hết khổ, cho quyến thuộc bình an. Nguyện tất cả thế gian đều trở thành Cực lạc.
 
 > Nguyện ngày an lành, đêm an lành, đêm ngày sáu thời đều an lành. Xin nguyện Từ bi thường gia hộ.
-> 
+>
 > Nguyện ngày an lành, đêm an lành, đêm ngày sáu thời đều an lành. Xin nguyện Tam Bảo thường gia hộ.
-> 
+>
 > Nguyện ngày an lành, đêm an lành, đêm ngày sáu thời đều an lành. Nguyện chư Hộ Pháp thường ủng hộ.
 
 ### TAM QUY

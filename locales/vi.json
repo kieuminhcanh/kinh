@@ -1,0 +1,182 @@
+{
+  "site": {
+    "title": "Kinh Phật",
+    "description": "Nam mô Bổn Sư Thích Ca Mâu Ni Phật."
+  },
+  "home": {
+    "heading": "Kinh Phật",
+    "columns": "Số cột",
+    "search": "Tìm kiếm"
+  },
+  "settings": {
+    "title": "Cài đặt",
+    "close": "Đóng",
+    "theme": {
+      "label": "Giao diện",
+      "light": "Sáng",
+      "sepia": "Sepia",
+      "dark": "Tối"
+    },
+    "fontFamily": {
+      "label": "Phông chữ",
+      "serif": "Noto Serif",
+      "sans": "Be Vietnam Pro"
+    },
+    "fontSize": "Cỡ chữ",
+    "lineHeight": "Khoảng cách dòng",
+    "language": "Ngôn ngữ",
+    "tts": {
+      "label": "Đọc to (TTS)",
+      "rate": "Tốc độ",
+      "voice": "Giọng đọc",
+      "voiceDefault": "Mặc định"
+    },
+    "autoScroll": {
+      "label": "Tốc độ tự cuộn",
+      "slow": "Chậm",
+      "normal": "Vừa",
+      "fast": "Nhanh"
+    },
+    "eyeRest": {
+      "label": "Nhắc nghỉ mắt",
+      "hint": "Nhắc nhẹ sau mỗi 25 phút đọc liên tục."
+    }
+  },
+  "reader": {
+    "bookmark": "Đánh dấu trang này",
+    "unbookmark": "Bỏ đánh dấu",
+    "play": "Đọc to",
+    "pause": "Tạm dừng đọc",
+    "resume": "Tiếp tục đọc",
+    "stop": "Dừng đọc",
+    "progress": "Tiến độ đọc",
+    "settings": "Cài đặt",
+    "autoScroll": {
+      "start": "Bật tự cuộn",
+      "stop": "Ngừng tự cuộn"
+    },
+    "focus": {
+      "exit": "Thoát chế độ tập trung"
+    },
+    "bar": {
+      "bookmark": "Đánh dấu",
+      "history": "Lịch sử",
+      "tts": "Đọc to",
+      "ttsPause": "Tạm dừng",
+      "ttsResume": "Tiếp tục",
+      "ttsStop": "Dừng",
+      "autoScroll": "Tự cuộn",
+      "autoScrollStop": "Dừng cuộn",
+      "focus": "Tập trung",
+      "settings": "Cài đặt",
+      "fontDecrease": "Giảm cỡ chữ",
+      "fontIncrease": "Tăng cỡ chữ"
+    }
+  },
+  "history": {
+    "title": "Lịch sử đọc",
+    "open": "Mở lịch sử",
+    "close": "Đóng",
+    "tab": {
+      "bookmarks": "Đánh dấu",
+      "reading": "Đang đọc"
+    },
+    "empty": {
+      "bookmarks": "Chưa có đánh dấu nào. Bấm nút đánh dấu khi đang đọc để lưu lại.",
+      "reading": "Chưa có trang nào đang đọc dở. Mở một kinh để bắt đầu."
+    },
+    "removeOne": "Xoá mục này",
+    "clearAll": "Xoá tất cả",
+    "confirmClear": "Xoá tất cả? Không thể hoàn tác.",
+    "confirmYes": "Xoá",
+    "confirmNo": "Huỷ",
+    "percent": "{n}%"
+  },
+  "continueReading": {
+    "label": "Đọc tiếp",
+    "dismiss": "Bỏ qua mục này"
+  },
+  "voice": {
+    "button": "Lệnh giọng",
+    "listening": "Đang nghe",
+    "start": "Bật lệnh giọng",
+    "stop": "Tắt lệnh giọng"
+  },
+  "eyeRest": {
+    "title": "Nghỉ mắt một chút",
+    "body": "Bạn đã đọc 25 phút. Hãy nhìn xa 20 bước trong 30 giây để mắt thư giãn.",
+    "rested": "Đã nghỉ",
+    "muteToday": "Tắt hôm nay"
+  },
+  "schedule": {
+    "title": "Lịch tụng kinh",
+    "button": "Lịch tụng",
+    "open": "Mở lịch tụng kinh",
+    "add": "Thêm lịch mới",
+    "save": "Lưu",
+    "delete": "Xoá lịch này",
+    "empty": "Chưa có lịch nào. Nhấn + để thêm.",
+    "next": "Lần kế",
+    "field": {
+      "kinh": "Kinh",
+      "time": "Giờ",
+      "repeat": "Lặp",
+      "weekday": "Thứ trong tuần",
+      "date": "Ngày"
+    },
+    "repeat": {
+      "daily": "Hàng ngày",
+      "weekly": "Hàng tuần",
+      "once": "Một lần"
+    },
+    "weekday": {
+      "0": "Chủ nhật",
+      "1": "Thứ 2",
+      "2": "Thứ 3",
+      "3": "Thứ 4",
+      "4": "Thứ 5",
+      "5": "Thứ 6",
+      "6": "Thứ 7"
+    },
+    "toast": {
+      "title": "Đến giờ tụng kinh",
+      "body": "Đã đến giờ tụng {kinh}.",
+      "open": "Mở kinh",
+      "dismiss": "Đóng"
+    }
+  },
+  "share": {
+    "button": "Chia sẻ",
+    "heading": "Chia sẻ kinh này",
+    "inviteText": "Mời bạn cùng đọc kinh",
+    "copied": "Đã sao chép link",
+    "copyFailed": "Lỗi sao chép, vui lòng copy URL thủ công",
+    "ariaShare": "Chia sẻ bài kinh"
+  },
+  "kinh": {
+    "kinh-dieu-phap-lien-hoa": {
+      "title": "Kinh Diệu Pháp Liên Hoa",
+      "description": "28 phẩm — Pháp Hoa Kinh"
+    },
+    "kinh-dia-tang": {
+      "title": "Kinh Địa Tạng",
+      "description": "13 phẩm"
+    },
+    "kinh-duoc-su": {
+      "title": "Kinh Dược Sư",
+      "description": ""
+    },
+    "kinh-pho-hien": {
+      "title": "Kinh Hạnh Nguyện Phổ Hiền",
+      "description": ""
+    },
+    "khai-kinh": {
+      "title": "Nghi Thức Khai Kinh",
+      "description": ""
+    },
+    "nghi-thuc-cong-phu-khuya": {
+      "title": "Nghi Thức Công Phu Khuya",
+      "description": ""
+    }
+  }
+}

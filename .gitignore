@@ -1,24 +1,23 @@
-# Nuxt dev/build outputs
-.output
-.data
-.nuxt
-.nitro
-.cache
-dist
-
-# Node dependencies
+# dependencies
 node_modules
+bun.lock
 
-# Logs
-logs
-*.log
+# vitepress
+.vitepress/cache
+.vitepress/dist
 
-# Misc
+# os
 .DS_Store
-.fleet
+Thumbs.db
+
+# editor
+.vscode
 .idea
 
-# Local env files
-.env
-.env.*
-!.env.example
+# logs
+*.log
+.npm
+
+# backup (one-shot migration artifact)
+.backup-content
+.backup-images
