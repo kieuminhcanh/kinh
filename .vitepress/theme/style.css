@@ -76,15 +76,19 @@ html {
   padding-left: 0 !important;
 }
 
-/* Single-file kinh (chapters:false, e.g. Kinh Dược Sư, Phổ Hiền, Khai Kinh,
-   Công Phu Khuya) have no sidebar config → VitePress hard-caps content at
-   .VPDoc:not(.has-sidebar) .content { max-width: 752px/784px }. Since the
-   sidebar surface is hidden anyway (see rule above), unlock the cap so reader
-   width stays consistent across all kinh. */
-.VPDoc:not(.has-sidebar) .container {
+/* VitePress hard-caps content width differently based on sidebar presence:
+   - Single-file kinh (chapters:false) → .VPDoc:not(.has-sidebar) .content caps at 752/784px.
+   - Multi-pham kinh (chapters:true) → .VPDoc.has-sidebar .content caps at 688px.
+   Sidebar surface is hidden via CSS (.VPSidebar { display: none }) in ALL
+   cases, so both caps produce wasted whitespace at viewports like 1340px.
+   Unlock both variants so reader width stays consistent across all kinh. */
+.VPDoc .container {
   max-width: var(--vp-layout-max-width) !important;
 }
-.VPDoc:not(.has-sidebar) .content {
+.VPDoc .content {
+  max-width: none !important;
+}
+.VPDoc.has-sidebar .content-container {
   max-width: none !important;
 }
 
