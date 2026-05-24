@@ -28,6 +28,14 @@ export const kinhCatalog: KinhMeta[] = [
     chapters: true,
   },
   {
+    slug: "kinh-dai-thua-vo-luong-tho",
+    title: "Kinh Đại Thừa Vô Lượng Thọ",
+    image: "/images/kinh-dai-thua-vo-luong-tho.jpg",
+    author: "HT. Thích Đức Niệm & Cư sĩ Minh Chánh",
+    description: "48 phẩm — bản hội tập Hạ Liên Cư",
+    chapters: true,
+  },
+  {
     slug: "kinh-duoc-su",
     title: "Kinh Dược Sư",
     image: "/images/kinh-duoc-su.jpg",
