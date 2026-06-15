@@ -19,8 +19,16 @@ type TtsStatus = "init" | "play" | "pause" | "end";
  */
 export function useTts() {
   const settings = useSettings();
+  // Feature flag: read-aloud is disabled for now to declutter the reader UI.
+  // Android Google TTS reliability on long chapters was the trigger; flip this
+  // to `true` to bring the speaker button + voice/rate settings back. Gating on
+  // `isSupported` hides both the bottom-bar button and the settings section in
+  // one place.
+  const TTS_ENABLED = false;
   const supported =
-    typeof window !== "undefined" && "speechSynthesis" in window;
+    TTS_ENABLED &&
+    typeof window !== "undefined" &&
+    "speechSynthesis" in window;
   const isSupported = ref(supported);
 
   // 3-state machine consumed by the bottom bar (idle/playing/paused).
