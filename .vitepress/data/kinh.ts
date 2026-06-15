@@ -36,6 +36,14 @@ export const kinhCatalog: KinhMeta[] = [
     chapters: true,
   },
   {
+    slug: "kinh-dai-thua-vo-luong-nghia",
+    title: "Kinh Đại Thừa Vô Lượng Nghĩa",
+    image: "/images/kinh-dai-thua-vo-luong-nghia.jpg",
+    author: "Tỳ-kheo Thích Tuệ Hải",
+    description: "3 phẩm — Khai kinh của Pháp Hoa",
+    chapters: true,
+  },
+  {
     slug: "kinh-duoc-su",
     title: "Kinh Dược Sư",
     image: "/images/kinh-duoc-su.jpg",
