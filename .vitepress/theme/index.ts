@@ -20,6 +20,17 @@ export default {
       // is safe. CSS user-select/touch-callout don't cover this; preventing
       // `contextmenu` does.
       document.addEventListener("contextmenu", (e) => e.preventDefault());
+      // Disable pinch / double-tap zoom. The reader has its own font-size
+      // controls (16–80px), so browser zoom is redundant and elderly users
+      // often trigger it accidentally, ending up at an awkward scale. Tighten
+      // VitePress's default viewport meta to lock the scale.
+      const viewport = document.querySelector('meta[name="viewport"]');
+      if (viewport) {
+        viewport.setAttribute(
+          "content",
+          "width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no",
+        );
+      }
       // PWA registration handled by vite-plugin-pwa virtual module
       import("virtual:pwa-register")
         .then(({ registerSW }) => {

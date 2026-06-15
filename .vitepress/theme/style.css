@@ -24,6 +24,9 @@ img {
 
 html {
   font-family: var(--reader-font-family);
+  /* Disable pinch / double-tap zoom (font-size controls replace it). Pairs
+     with the locked viewport meta set in theme/index.ts; still allows scroll. */
+  touch-action: pan-x pan-y;
 }
 
 /* Reader article — VitePress wraps page content in .vp-doc */
