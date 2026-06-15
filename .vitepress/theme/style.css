@@ -76,6 +76,18 @@ html {
   padding-left: 0 !important;
 }
 
+/* Nav bar uneven transparency fix. When a sidebar is configured
+   (chapters:true), VitePress splits the nav bar into a left `.title` (logo)
+   zone and a right `.content` zone. On desktop the content half keeps a solid
+   nav background while the title half is left transparent — so the logo area
+   looks see-through while the rest is opaque. The sidebar surface is hidden in
+   this theme, so give the logo zone the same background and drop the divider
+   beneath it, making the whole bar one uniform surface. */
+.VPNavBar.has-sidebar .title {
+  background-color: var(--vp-nav-bg-color) !important;
+  border-bottom: 0 !important;
+}
+
 /* VitePress hard-caps content width differently based on sidebar presence:
    - Single-file kinh (chapters:false) → .VPDoc:not(.has-sidebar) .content caps at 752/784px.
    - Multi-pham kinh (chapters:true) → .VPDoc.has-sidebar .content caps at 688px.
