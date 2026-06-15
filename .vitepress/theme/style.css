@@ -124,6 +124,22 @@ html {
   font-style: italic;
 }
 
+/* Code blocks (```...```) used for verses (kệ) in nghi thức pages render as
+   <pre> with `overflow-x: auto`, producing a horizontal scrollbar when a line
+   is long. Wrap long lines onto the next line instead so the whole verse stays
+   visible without scrolling — important for elderly readers on narrow screens. */
+.vp-doc div[class*="language-"] pre,
+.vp-doc pre {
+  overflow-x: visible;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.vp-doc div[class*="language-"] code,
+.vp-doc pre code {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
 /* Smooth scroll for anchor links */
 html {
   scroll-behavior: smooth;
