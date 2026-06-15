@@ -164,6 +164,25 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Disable text selection while reading. Elderly users resting a finger on the
+   screen often trigger an accidental long-press selection / context menu over
+   the kinh text. Suppress selection + the iOS touch callout app-wide, but keep
+   real form controls (settings drawer slider / dropdown) fully usable. */
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+input,
+textarea,
+select,
+[contenteditable] {
+  -webkit-user-select: auto;
+  -moz-user-select: text;
+  user-select: text;
+}
+
 /* Chapter pager (VitePress docFooter): show LARGE directional arrows
    flush to the left/right edge of each pager button so elderly readers
    identify direction at a glance. Arrow height ~80% of button via 2.5em
