@@ -7,6 +7,14 @@ img.object-cover {
   height: 100%;
 }
 
+/* Block image long-press / drag affordances (save, share, drag-to-desktop).
+   Pairs with the global `contextmenu` suppression in theme/index.ts. */
+img {
+  -webkit-touch-callout: none;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
 /* Reader font + spacing — controlled by JS via CSS vars on :root */
 :root {
   --reader-font-size: 18px;
