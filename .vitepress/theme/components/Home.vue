@@ -10,7 +10,7 @@ const { t, te } = useI18n();
 
 // Quick font-size adjustment (same bounds as reader bottom bar).
 const MIN_FONT_SIZE = 16;
-const MAX_FONT_SIZE = 60;
+const MAX_FONT_SIZE = 80;
 const FONT_SIZE_STEP = 2;
 const canDecreaseFont = computed(() => settings.value.fontSize > MIN_FONT_SIZE);
 const canIncreaseFont = computed(() => settings.value.fontSize < MAX_FONT_SIZE);

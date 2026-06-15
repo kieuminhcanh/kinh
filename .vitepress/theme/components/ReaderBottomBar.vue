@@ -35,7 +35,7 @@ const ttsButtonAria = computed(() => {
 
 // Quick font-size adjustment bounds (kept in sync with spec 003 a11y baseline).
 const MIN_FONT_SIZE = 16;
-const MAX_FONT_SIZE = 60;
+const MAX_FONT_SIZE = 80;
 const FONT_SIZE_STEP = 2;
 
 const canDecrease = computed(() => settings.value.fontSize > MIN_FONT_SIZE);
