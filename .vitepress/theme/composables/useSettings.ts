@@ -6,7 +6,7 @@ export type AutoScrollSpeed = "slow" | "normal" | "fast";
 
 export type Settings = {
   theme: Theme;
-  fontSize: number; // px, 16..60
+  fontSize: number; // px, 16..80
   lineHeight: number; // 1.6..2.4
   gridColumns: 1 | 2 | 3;
   ttsRate: number; // 0.5..2

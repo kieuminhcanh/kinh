@@ -157,7 +157,7 @@ const pickerInactive = "";
           <input
             type="range"
             min="16"
-            max="60"
+            max="80"
             step="1"
             v-model.number="settings.fontSize"
             class="w-full accent-[--vp-c-brand-1] min-h-11"
