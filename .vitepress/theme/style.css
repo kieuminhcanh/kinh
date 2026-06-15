@@ -140,6 +140,13 @@ html {
   word-break: break-word;
 }
 
+/* Remove underline on content links (default + hover). VitePress underlines
+   links on hover; the underline clutters reading for elderly users. */
+.vp-doc a,
+.vp-doc a:hover {
+  text-decoration: none;
+}
+
 /* Smooth scroll for anchor links */
 html {
   scroll-behavior: smooth;
